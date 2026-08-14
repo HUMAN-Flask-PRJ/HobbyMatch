@@ -1,0 +1,258 @@
+[
+  {
+    "type": "INTJ",
+    "name": "용의주도한 전략가",
+    "category": "분석형 (Analysts)",
+    "title": "체계적인 지적 탐구와 심도 깊은 개인 마스터리",
+    "summary": "독립적이고 전략적인 사고로 원리를 파악하고 체계적으로 마스터하는 취미를 선호합니다.",
+    "hobbyTrait": "혼자 깊게 몰입할 수 있거나 결과물이 체계적인 활동",
+    "recommendedKeywords": [
+      "체스",
+      "전략",
+      "코딩",
+      "천체관측",
+      "독서"
+    ],
+    "color": "from-purple-600 to-indigo-600"
+  },
+  {
+    "type": "INTP",
+    "name": "아이디어파 논리학자",
+    "category": "분석형 (Analysts)",
+    "title": "새로운 개념 탐구와 이론적 메커니즘 호기심",
+    "summary": "새로운 이론이나 비정형적 메커니즘을 분석하고 분해·조립하는 활동에 매료됩니다.",
+    "hobbyTrait": "규칙을 배우고 호기심을 해소할 수 있는 크리에이티브 활동",
+    "recommendedKeywords": [
+      "레고",
+      "3D프린팅",
+      "보드게임",
+      "철학",
+      "조립"
+    ],
+    "color": "from-purple-600 to-indigo-600"
+  },
+  {
+    "type": "ENTJ",
+    "name": "대담한 통솔자",
+    "category": "분석형 (Analysts)",
+    "title": "목표 지향적 성취와 가시적인 성장 피드백",
+    "summary": "명확한 목표가 있고 단계별 스킬업이 수치로 증명되는 도전적 활동을 즐깁니다.",
+    "hobbyTrait": "목표 달성감과 그룹을 리드하거나 경쟁/측정이 가능한 스포츠/비즈니스",
+    "recommendedKeywords": [
+      "테니스",
+      "러닝",
+      "수제맥주",
+      "와인테이스팅",
+      "크로스핏"
+    ],
+    "color": "from-purple-600 to-indigo-600"
+  },
+  {
+    "type": "ENTP",
+    "name": "뜨거운 논쟁을 즐기는 변론가",
+    "category": "분석형 (Analysts)",
+    "title": "다양한 시도와 실험적 창의성",
+    "summary": "반복되는 Routine보다는 매번 다른 조건에서 임기응변과 발상을 자극하는 활동을 찾아다닙니다.",
+    "hobbyTrait": "실험적이고 창의적이며 매번 새로운 규칙과 자극이 있는 지적 활동",
+    "recommendedKeywords": [
+      "DJing",
+      "팟캐스트",
+      "토론모임",
+      "드론",
+      "칵테일"
+    ],
+    "color": "from-purple-600 to-indigo-600"
+  },
+  {
+    "type": "INFJ",
+    "name": "선선의 옹호자",
+    "category": "외교형 (Diplomats)",
+    "title": "내면의 정서적 깊이와 아늑한 자아 성찰",
+    "summary": "조용하고 감성적이며 자신의 정서와 내면을 정돈할 수 있는 의미 있는 활동에 깊이 몰입합니다.",
+    "hobbyTrait": "정신적 안정을 주거나 감성을 기록하는 정적인 공간에서의 취미",
+    "recommendedKeywords": [
+      "필름카메라",
+      "자수",
+      "다도",
+      "싱잉볼",
+      "원예"
+    ],
+    "color": "from-emerald-600 to-teal-600"
+  },
+  {
+    "type": "INFP",
+    "name": "열정적인 중재자",
+    "category": "외교형 (Diplomats)",
+    "title": "자유로운 예술적 감성과 낭만적 자기표현",
+    "summary": "규칙에 매이지 않는 나만의 분위기와 감정을 아날로그적 매체로 표현하기를 좋아합니다.",
+    "hobbyTrait": "손으로 직접 만들거나 가사가 감성적인 음악, 수채화, 캘리그라피",
+    "recommendedKeywords": [
+      "드로잉",
+      "우쿨렐레",
+      "향수조향",
+      "시작성",
+      "도예"
+    ],
+    "color": "from-emerald-600 to-teal-600"
+  },
+  {
+    "type": "ENFJ",
+    "name": "정의로운 사회운동가",
+    "category": "외교형 (Diplomats)",
+    "title": "함께 성장하는 긍정적 에너지와 인프라 형성",
+    "summary": "사람들과 따뜻한 교감을 나누고 소통하며 서로에게 긍정적인 자극을 주는 소모임을 선호합니다.",
+    "hobbyTrait": "친목 소모임, 봉사 활동, 팀 기반 액티비티 및 홈파티 요리",
+    "recommendedKeywords": [
+      "플로깅",
+      "홈카페",
+      "원데이클래스",
+      "요가모임",
+      "소모임"
+    ],
+    "color": "from-emerald-600 to-teal-600"
+  },
+  {
+    "type": "ENFP",
+    "name": "재발랄한 활동가",
+    "category": "외교형 (Diplomats)",
+    "title": "열정과 에너지가 넘치는 다재다능한 호기심",
+    "summary": "흥미로운 사람들과 어울리고 새로운 감각적 아이디어를 마음껏 펼치는 취미에 열광합니다.",
+    "hobbyTrait": "트렌디하고 즉흥적이며 즐거움을 즉각 전달하는 소셜 스포츠 및 예술",
+    "recommendedKeywords": [
+      "서핑",
+      "숏폼영상",
+      "보드게임",
+      "수제쿠키",
+      "페스티벌"
+    ],
+    "color": "from-emerald-600 to-teal-600"
+  },
+  {
+    "type": "ISTJ",
+    "name": "청렴결백한 논리주의자",
+    "category": "관리형 (Sentinels)",
+    "title": "질서 정연함과 꼼꼼한 완성도의 기록",
+    "summary": "명확한 매뉴얼과 단계를 따라 성실히 완수하는 정갈하고 수집/정리적인 활동을 잘 해냅니다.",
+    "hobbyTrait": "결과가 단정하게 정돈되거나 기록과 가계부, 디테일이 요구되는 목공/정원",
+    "recommendedKeywords": [
+      "가죽공예",
+      "프라모델",
+      "식물재배",
+      "다이어리",
+      "자전거"
+    ],
+    "color": "from-amber-600 to-orange-600"
+  },
+  {
+    "type": "ISFJ",
+    "name": "용감한 수호자",
+    "category": "관리형 (Sentinels)",
+    "title": "따뜻한 보살핌과 정성 어린 선물 만들기",
+    "summary": "소중한 사람이나 가족, 자신에게 안락함과 정성을 선물할 수 있는 평온한 취미를 좋아합니다.",
+    "hobbyTrait": "베이킹, 자수, 원예, 홈데코처럼 따스하고 조용한 홈 라이프 취미",
+    "recommendedKeywords": [
+      "제과제빵",
+      "프랑스자수",
+      "아로마테라피",
+      "뜨개질",
+      "뜨개"
+    ],
+    "color": "from-amber-600 to-orange-600"
+  },
+  {
+    "type": "ESTJ",
+    "name": "엄격한 관리자",
+    "category": "관리형 (Sentinels)",
+    "title": "규율과 단체 활동 속의 탁월한 조직력",
+    "summary": "규칙이 명확하고 실질적 성과가 나오며 스케줄 관리와 조직적인 협동이 가능한 취미를 좋아합니다.",
+    "hobbyTrait": "골프, 피트니스 루틴, 동호회 조직, 자격증 연계 클래스",
+    "recommendedKeywords": [
+      "클라이밍",
+      "트레킹",
+      "수제가구",
+      "와인",
+      "기획모임"
+    ],
+    "color": "from-amber-600 to-orange-600"
+  },
+  {
+    "type": "ESFJ",
+    "name": "사교적인 외교관",
+    "category": "관리형 (Sentinels)",
+    "title": "화목한 나눔과 친근한 사람들과의 즐거움",
+    "summary": "주변 분위기를 밝게 만들고 모임에서 음식을 나누거나 함께 웃을 수 있는 사교 취미에 강합니다.",
+    "hobbyTrait": "요리 클래스, 그룹 다이어트, 캠핑, 보드게임파티",
+    "recommendedKeywords": [
+      "캠핑",
+      "쿠킹클래스",
+      "볼링",
+      "배드민턴",
+      "오케스트라"
+    ],
+    "color": "from-amber-600 to-orange-600"
+  },
+  {
+    "type": "ISTP",
+    "name": "만능 재주꾼",
+    "category": "탐험가형 (Explorers)",
+    "title": "손끝 감각과 공학적 조작의 짜릿함",
+    "summary": "도구를 직접 다루고 기계를 수리하거나 직접 신체를 움직이며 감각적으로 체득하는 취미를 스릴 있게 다룹니다.",
+    "hobbyTrait": "자전거 정비, 가죽 목공, 스케이트보드, 드론 조종, 사격",
+    "recommendedKeywords": [
+      "가죽목공",
+      "클레이사격",
+      "스케이트보드",
+      "캠핑장비정비",
+      "바이크"
+    ],
+    "color": "from-cyan-600 to-blue-600"
+  },
+  {
+    "type": "ISFP",
+    "name": "호기심 많은 예술가",
+    "category": "탐험가형 (Explorers)",
+    "title": "감각적 미학에 둘러싸인 여유롭고 온화한 순간",
+    "summary": "자연스러운 아름다움과 신체 감각을 느끼며 조용히 순간을 즐길 수 있는 미적 활동에 사로잡힙니다.",
+    "hobbyTrait": "오일파스텔 드로잉, 수목원 산책, 유기농 요리, 칼림바 연주",
+    "recommendedKeywords": [
+      "오일파스텔",
+      "칼림바",
+      "유화",
+      "스노클링",
+      "식집사"
+    ],
+    "color": "from-cyan-600 to-blue-600"
+  },
+  {
+    "type": "ESTP",
+    "name": "모험을 즐기는 사업가",
+    "category": "탐험가형 (Explorers)",
+    "title": "즉각적인 신체적 몰입과 스릴 넘치는 액션",
+    "summary": "긴 시간 지루한 이론보다는 실전 동작과 즉각적인 스릴, 스피드, 야외 액티비티를 선호합니다.",
+    "hobbyTrait": "서핑, 클라이밍, 카트 레이싱, 스쿠버다이빙, 크로스핏",
+    "recommendedKeywords": [
+      "서핑",
+      "볼더링",
+      "웨이트",
+      "스쿠버다이빙",
+      "풋살"
+    ],
+    "color": "from-cyan-600 to-blue-600"
+  },
+  {
+    "type": "ESFP",
+    "name": "자유로운 영혼의 연예인",
+    "category": "탐험가형 (Explorers)",
+    "title": "에너지 분출과 사람들의 시선을 사로잡는 화려함",
+    "summary": "음악, 댄스, 사교적 파티, 트렌디한 인스타그램 피드 등 밝고 에너제틱한 흥을 표현합니다.",
+    "hobbyTrait": "댄스 수강, 숏폼제작, 밴드 통기타, 페스티벌, 파티 코스요리",
+    "recommendedKeywords": [
+      "댄스클래스",
+      "통기타",
+      "숏폼제작",
+      "소모임파티",
+      "테니스"
+    ],
+    "color": "from-cyan-600 to-blue-600"
+  }
+]

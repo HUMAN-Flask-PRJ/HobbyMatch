@@ -1,0 +1,2144 @@
+[
+  {
+    "id": "film_photography",
+    "name": "필름 카메라 출사",
+    "category": "🎨 창작 & 예술",
+    "iconName": "Camera",
+    "summary": "한 컷 한 컷 신중하게 프레임에 담아내는 아날로그 감성 출사",
+    "description": "디지털의 빠름 대신, 필름이 주는 특유의 질감과 현상을 기다리는 설렘을 느끼는 정서적 사진 취미입니다.",
+    "relatedHobbies": [
+      "digital_drawing",
+      "leather_craft",
+      "vintage_record_collecting",
+      "blog_writing"
+    ],
+    "tags": [
+      "아날로그",
+      "감성사진",
+      "기록",
+      "혼자서도",
+      "산책"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "CREATION",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "MEDIUM",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "HALF_DAY",
+    "indoorOutdoor": "OUTDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "입문용 토이/자동 필름카메라 (5만~15만 원대) 구입",
+        "기본 컬러 가거 35mm 필름 2~3롤 준비",
+        "현상소 위치 및 스캔 서비스 확인"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "필름 장착 법 숙지",
+          "description": "카메라 뒤판을 열고 톱니바퀴에 필름을 바르게 고정하는 기초 연습을 합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "가벼운 동네 출사",
+          "description": "골목길의 햇살, 빈티지 간판, 계절의 변화 등 주변 풍경부터 24컷을 찍어봅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "필름 현상 및 디지털 스캔",
+          "description": "현상소에 맡겨 고화질 고유 색감의 사진 파일을 메일로 받는 감격을 누립니다."
+        }
+      ],
+      "commonMistakes": "어두운 실내에서 플래시 없이 찍으면 사진이 아예 노출 부족으로 검게 나오니 주의하세요.",
+      "estimatedMonthlyCost": "약 3만 ~ 5만 원 (필름 및 스캔 비용)"
+    }
+  },
+  {
+    "id": "oil_pastel_drawing",
+    "name": "오일파스텔 드로잉",
+    "category": "🎨 창작 & 예술",
+    "iconName": "Palette",
+    "summary": "부드러운 질감과 따뜻한 색감으로 손 끝에서 완성하는 일상 소품 화폭",
+    "description": "물감이나 붓 없이도 오일파스텔만으로 밀도 높은 질감의 풍경과 디저트 그림을 그릴 수 있는 손쉬운 미술 취미입니다.",
+    "relatedHobbies": [
+      "film_photography",
+      "calligraphy",
+      "pottery_craft"
+    ],
+    "tags": [
+      "손그림",
+      "힐링아트",
+      "집콕",
+      "손재주",
+      "컬러감"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "STRESS_RELIEF",
+      "CREATION",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 5,
+    "starterGuide": {
+      "preparationChecklist": [
+        "문교 오일파스텔 48색 세트 (약 2만 원)",
+        "찰색이 잘 되는 찰색지 스케치북",
+        "블렌딩용 찰필 및 키친타올"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "기초 그러데이션 연습",
+          "description": "두 가지 이상의 색을 겹쳐칠하고 손가락이나 찰필로 자연스럽게 문지르는 스머징 기법을 배웁니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "간단한 노을 하늘 그리기",
+          "description": "분홍색, 주황색, 보라색으로 이어지는 노을 풍경을 첫 작품으로 완성해봅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "작품 액자 스타일링",
+          "description": "마스크 테이프를 떼어내어 깔끔한 단색 프레임을 만든 뒤 인테리어 소품으로 활용합니다."
+        }
+      ],
+      "commonMistakes": "오일파스텔 똥(찌꺼기)을 손으로 비비면 그림이 번지니 붓으로 털어내세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원 (스케치북 보충)"
+    }
+  },
+  {
+    "id": "leather_craft",
+    "name": "가죽 공예 (가죽 소품 제작)",
+    "category": "🎨 창작 & 예술",
+    "iconName": "Scissors",
+    "summary": "패턴 재단부터 핸드 스티치 바느질까지, 오직 나만의 가죽 제품 완성",
+    "description": "베지터블 가죽에 구멍을 뚫고 새들 스티치로 한 땀 한 땀 바느질하여 카드지갑, 키링, 에어팟 케이스를 제작합니다.",
+    "relatedHobbies": [
+      "pottery_craft",
+      "woodworking",
+      "lego_building"
+    ],
+    "tags": [
+      "가죽소품",
+      "수공예",
+      "새들스티치",
+      "몰입",
+      "디테일"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "STRESS_RELIEF",
+      "KNOWLEDGE"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "LOW",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "HALF_DAY",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "입문용 가죽 공예 도구 세트 (치슬, 망치, 포니, 실, 바늘)",
+        "재단된 베지터블 원단 가죽 키트",
+        "단면 마감용 토코놀 및 마감봉"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "치슬 그리프 펀칭",
+          "description": "망치와 치슬을 이용해 일정한 간격으로 바느질 구멍을 수직으로 뚫는 직진 연습을 진행합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "새들 스티치 바느질",
+          "description": "양손에 바늘을 하나씩 쥐고 교차시키며 정교한 사선 바느질 패턴을 만들어냅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "단면 엣지 마감",
+          "description": "가죽 단면에 토코놀을 바르고 슬리커로 마찰 열을 가해 매끈하고 반짝이는 마감을 완성합니다."
+        }
+      ],
+      "commonMistakes": "치슬을 비스듬히 치면 뒷면 구멍이 삐뚤어지므로 반드시 90도 수직을 유지하세요.",
+      "estimatedMonthlyCost": "약 3만 ~ 7만 원 (가죽 원단 구매)"
+    }
+  },
+  {
+    "id": "pottery_craft",
+    "name": "도예 & 물레 핸드빌딩",
+    "category": "🎨 창작 & 예술",
+    "iconName": "Sparkles",
+    "summary": "부드러운 흙을 만지며 마음을 차분히 가라앉히는 감각적인 도자기 오브제 제작",
+    "description": "흙의 감촉에 집중하여 나만의 시그니처 컵, 접시, 인센스 홀더를 만들고 찰흙 핸드빌딩 기법을 익힙니다.",
+    "relatedHobbies": [
+      "leather_craft",
+      "oil_pastel_drawing",
+      "tea_ceremony"
+    ],
+    "tags": [
+      "흙만지기",
+      "도자기",
+      "힐링",
+      "감각촉각",
+      "오브제"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "CREATION",
+      "MINDFULNESS"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "LOW",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "공방 원데이 클래스 예약 또는 가정용 도예점토 세트",
+        "나무 조각 도구 및 스펀지, 도예용 헤라",
+        "소성(가마) 서비스 이용 안내 받아두기"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "흙 토련(공기 빼기)",
+          "description": "반죽 속 공기를 밀어내어 가마에서 구울 때 깨지지 않도록 부드럽게 만들어 줍니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "코일링 핸드빌딩",
+          "description": "흙을 굵은 국수 모양으로 밀어 쌓아 올리며 오목한 잔이나 머그컵 형태를 다듬습니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "건조 및 유약 재가마",
+          "description": "잘 말린 뒤 1차 초벌, 유약 착색 후 2차 재벌 가마를 거쳐 실물 그릇을 완성합니다."
+        }
+      ],
+      "commonMistakes": "흙이 너무 건조해지면 갈라지므로 제작 중 스펀지로 촉촉한 습도를 유지해야 합니다.",
+      "estimatedMonthlyCost": "약 4만 ~ 8만 원 (공방 수강 및 가마 비용)"
+    }
+  },
+  {
+    "id": "digital_drawing",
+    "name": "아이패드 디지탈 드로잉",
+    "category": "🎨 창작 & 예술",
+    "iconName": "Pencil",
+    "summary": "프로크리에이트 앱으로 그리는 세련된 이모티콘 및 일러스트",
+    "description": "지우개 가루나 물감 정리 없이 태블릿으로 손쉽게 다양한 붓 질감을 구현하고 레이어를 활용해 그림을 그립니다.",
+    "relatedHobbies": [
+      "film_photography",
+      "short_form_video",
+      "blog_writing"
+    ],
+    "tags": [
+      "아이패드",
+      "프로크리에이트",
+      "이모티콘",
+      "디지털아트",
+      "집콕"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "STRESS_RELIEF",
+      "KNOWLEDGE"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "FREE",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "태블릿 (아이패드/갤탭) 및 전용 터치펜슬",
+        "프로크리에이트(Procreate) 또는 클립스튜디오 앱",
+        "종이질감 필름 붙이기 (선택 사항)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "기초 브러시 및 레이어 이해",
+          "description": "선화 레이어와 채색 레이어를 분리하여 수정이 용이한 디지털 작업 원리를 배웁니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "사진 위에 따라 그리기(트레이싱)",
+          "description": "최애 카페 사진이나 반려동물 사진을 레이어 아래 깔고 라인을 따며 감각을 넓힙니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "나만의 이모티콘 스티커 제작",
+          "description": "투명 PNG 파일로 저장하여 캐릭터 스티커 및 인스타그램 스토리 스티커로 올려봅니다."
+        }
+      ],
+      "commonMistakes": "하나의 레이어에 선과 색을 모두 그려버리면 나중에 수정하기가 매우 힘들어집니다.",
+      "estimatedMonthlyCost": "약 0원 (기기 보유 기준)"
+    }
+  },
+  {
+    "id": "ukulele_playing",
+    "name": "우쿨렐레 연주",
+    "category": "🎵 음악 & 공연",
+    "iconName": "Music",
+    "summary": "4줄의 가벼운 나일론 줄로 피우는 경쾌하고 따뜻한 하와이안 멜로디",
+    "description": "손가락 통증이 적고 코드 몇 개만 익혀도 금세 반주하며 노래할 수 있는 부담 없는 현악기 취미입니다.",
+    "relatedHobbies": [
+      "kalimba_playing",
+      "acoustic_guitar",
+      "singing_and_vocal"
+    ],
+    "tags": [
+      "쉬운악기",
+      "탄탄한반주",
+      "경쾌함",
+      "힐링음악",
+      "휴대성"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "CREATION",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 5,
+    "starterGuide": {
+      "preparationChecklist": [
+        "콘서트 타입 우쿨렐레 (8만~15만 원대)",
+        "디지털 클립 튜너 앱 (GuitarTuna 등)",
+        "우쿨렐레 입문용 코드 악보집"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "기초 코드 3개 익히기 (C, F, G7)",
+          "description": "손가락 끝으로 줄을 정확히 짚는 기본 자세와 기본 4비트 스트로크를 다집니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "동요/쉬운 가요 반주",
+          "description": "‘곰 세 마리’나 ‘제주도의 푸른 밤’ 같은 친숙한 곡을 부르며 코드 체인지를 연습합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "퍼커시브 스트로크 도전",
+          "description": "줄을 찰칵 치며 리듬감을 살리는 테크닉을 살려 싱그러운 사운드를 연주합니다."
+        }
+      ],
+      "commonMistakes": "줄을 짚을 때 손톱이 길면 정확한 소리가 안 나므로 왼쪽 손톱을 짧게 정돈하세요.",
+      "estimatedMonthlyCost": "약 0원 ~ 1만 원 (악보집 구매)"
+    }
+  },
+  {
+    "id": "kalimba_playing",
+    "name": "칼림바 연주",
+    "category": "🎵 음악 & 공연",
+    "iconName": "Volume2",
+    "summary": "엄지손가락으로 튕기며 울리는 오르골처럼 청아한 치유의 소리",
+    "description": "악보를 몰라도 숫자 악보를 보며 10분 만에 곡을 연주할 수 있는 대표적인 힐링 집콕 악기입니다.",
+    "relatedHobbies": [
+      "ukulele_playing",
+      "tea_ceremony",
+      "singing_bowl"
+    ],
+    "tags": [
+      "오르골소리",
+      "엄지 피아노",
+      "초보자강추",
+      "명상소리",
+      "집콕"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "STRESS_RELIEF",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "17키 플레이트 또는 코어 칼림바 (2만~4만 원)",
+        "음쇠 튜닝용 망치",
+        "숫자 악보 프린트 또는 스마트폰 앱"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "스마트폰 튜닝 앱으로 음 정렬",
+          "description": "튜닝망치로 건반 끝을 미세하게 두드려 17개 음쇠의 피치를 맞춥니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "숫자 악보 읽기",
+          "description": "5선보 대신 1, 2, 3 숫자에 맞춰 엄지 손가락 끝으로 살짝 튕겨 소리를 냅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "지브리 애니메이션 OST 연주",
+          "description": "‘언제나 몇 번이라도’ 등 몽환적이고 아름다운 곡을 밤 조명 아래 연주해봅니다."
+        }
+      ],
+      "commonMistakes": "엄지 손톱 대신 손가락 살로만 튕기면 사운드가 먹먹해지므로 약간의 손톱을 남겨두는 것이 좋습니다.",
+      "estimatedMonthlyCost": "약 0원"
+    }
+  },
+  {
+    "id": "djing_mix",
+    "name": "디제잉 (DJing & 리믹스)",
+    "category": "🎵 음악 & 공연",
+    "iconName": "Disc",
+    "summary": "좋아하는 곡의 비트를 이어 붙여 클럽/페스티벌 플레이리스트를 내 손으로!",
+    "description": "비트매칭, EQ 조절, 페이더 전환 기법을 익혀 나만의 트랙셋을 구성하고 파티나 유튜브에 공유합니다.",
+    "relatedHobbies": [
+      "short_form_video",
+      "podcast_creation",
+      "retro_gaming"
+    ],
+    "tags": [
+      "비트매칭",
+      "트렌디",
+      "파티리듬",
+      "음악믹싱",
+      "클럽비트"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "CREATION",
+      "STRESS_RELIEF",
+      "NETWORKING"
+    ],
+    "difficulty": "HARD",
+    "activityLevel": "MEDIUM",
+    "budgetTier": "HIGH",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 9,
+    "starterGuide": {
+      "preparationChecklist": [
+        "파이오니어 DDJ-200 등 스마트폰/PC 연동 DJ 콘트롤러 (20만~30만 원대)",
+        "rekordbox 또는 djay 앱",
+        "모니터링용 헤드폰"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "BPM 및 마디 구획 이해",
+          "description": "4비트 8마디 단위로 곡의 구조(Intro, Verse, Drop)를 파악하는 청음 훈련을 합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "기본 EQ 믹싱 (Bass 교체)",
+          "description": "A 곡의 저음을 내리면서 B 곡의 저음을 올려 매끄럽게 연결하는 비트 스위칭을 배웁니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "30분 서머 믹스셋 완성",
+          "description": "내가 가장 사랑하는 시티팝이나 EDM 8곡을 모아 하나의 끊김없는 미믹스 트랙으로 만듭니다."
+        }
+      ],
+      "commonMistakes": "보컬이 들어간 마디끼리 오버랩 시키면 목소리가 겹쳐 소리가 지저분해집니다.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원 (음원 다운로드 로열티)"
+    }
+  },
+  {
+    "id": "indoor_bouldering",
+    "name": "실내 클라이밍 (볼더링)",
+    "category": "🏃 액티비티 & 스포츠",
+    "iconName": "Activity",
+    "summary": "벽 위의 루트를 두뇌와 신체로 해결하는 퍼즐 같은 스포츠",
+    "description": "동일한 색상의 홀드만을 사용해 정상 TOP 홀드를 두 손으로 제압하는 성취감 높은 전신 신체 운동입니다.",
+    "relatedHobbies": [
+      "crossfit_training",
+      "trail_running",
+      "surfing_adventure"
+    ],
+    "tags": [
+      "성취감",
+      "전신근력",
+      "퍼즐풀기",
+      "몰입감",
+      "트렌디운동"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "FITNESS",
+      "STRESS_RELIEF",
+      "NETWORKING"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "HIGH",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 8,
+    "starterGuide": {
+      "preparationChecklist": [
+        "암장 방문 및 암벽화 대여 (첫 방문 강습 패키지 약 3만 원)",
+        "움직이기 편한 신축성 스포츠웨어",
+        "초크백 및 손가락 테이핑용 테이프"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "안전하게 낙하하는 법(낙법) 배우기",
+          "description": "매트 위로 착지할 때 무릎을 굽히고 뒤로 구르며 충격을 분산하는 안전 기술을 가장 먼저 익힙니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "삼각형 자세 (무게중심)",
+          "description": "손은 모으고 발은 넓게 벌려 체중을 하체로 지지하는 기본 무브먼트를 익힙니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "빨강/주황 난이도 테이프 클리어",
+          "description": "내 등급에 맞는 문제를 관찰하고 루트를 머릿속으로 그린 뒤 파이팅 넘치게 완등합니다."
+        }
+      ],
+      "commonMistakes": "팔 힘으로만 끌어올리면 전완근이 금방 털려버립니다. 발끝으로 체중을 밀어 올리세요.",
+      "estimatedMonthlyCost": "약 10만 ~ 15만 원 (월 회원권)"
+    }
+  },
+  {
+    "id": "trail_running",
+    "name": "트레일 러닝 & 플로깅",
+    "category": "🏃 액티비티 & 스포츠",
+    "iconName": "Footprints",
+    "summary": "아스팔트 대신 흙길과 능선을 달리며 지구력을 기르는 자연 호흡",
+    "description": "산길과 들판의 지형 기복을 달리며 신선한 바람을 마시고, 쓰레기를 줍는 친환경 가치 러닝을 겸할 수 있습니다.",
+    "relatedHobbies": [
+      "indoor_bouldering",
+      "camping_backpacking",
+      "cycling_tour"
+    ],
+    "tags": [
+      "자연호흡",
+      "친환경플로깅",
+      "심폐지구력",
+      "산악러닝",
+      "에너지"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "FITNESS",
+      "STRESS_RELIEF",
+      "NETWORKING"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "HIGH",
+    "budgetTier": "LOW",
+    "timeRequired": "HALF_DAY",
+    "indoorOutdoor": "OUTDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "접지력 높은 트레일러닝 전용화 (10만~20만 원)",
+        "수분 보충용 러닝 조끼(베스트) 및 플라스크 물병",
+        "플로깅용 친환경 집게 및 마대 자루"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "가까운 낮은 수목원/임도 코스 탐색",
+          "description": "경사가 완만한 둘레길 코스를 선정하여 경보와 가벼운 조깅을 번갈아 진행합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "보폭 줄이기 기술",
+          "description": "불규칙한 돌이나 뿌리에 넘어지지 않도록 보폭을 짧게 가져가며 잔걸음으로 달립니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "크루 플로깅 러닝 참여",
+          "description": "주말 아침 크루들과 산책로 쓰레기를 모으며 건강과 보람을 동시에 챙깁니다."
+        }
+      ],
+      "commonMistakes": "내리막길에서 속도를 무리하게 내면 무릎 관절에 큰 무리가 가니 조심히 무게중심을 낮추세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원 (기온별 에너지젤 등)"
+    }
+  },
+  {
+    "id": "tennis_club",
+    "name": "테니스 & 스트록 라이프",
+    "category": "🏃 액티비티 & 스포츠",
+    "iconName": "Trophy",
+    "summary": "라켓 고유의 쾌감 있는 타구음과 강렬한 랠리로 발산하는 스포티한 삶",
+    "description": "포핸드, 백핸드 스트록부터 스플릿 스텝까지 배우며 실내외 코트에서 스피디한 경기를 펼치는 유산소 대표 운동입니다.",
+    "relatedHobbies": [
+      "indoor_bouldering",
+      "crossfit_training",
+      "wine_tasting"
+    ],
+    "tags": [
+      "유산소폭발",
+      "타구감",
+      "네트스포츠",
+      "스타일리시",
+      "소모임"
+    ],
+    "socialType": "GROUP",
+    "purpose": [
+      "FITNESS",
+      "NETWORKING",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "HARD",
+    "activityLevel": "HIGH",
+    "budgetTier": "HIGH",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "BOTH",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "입문용 라켓 (가벼운 270~290g 무게)",
+        "하드코트용 테니스화 (발목 보강용)",
+        "실내 레슨장 등록"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "포핸드 스트록 폼 다지기",
+          "description": "체중을 뒤에서 앞으로 이동시키며 라켓 면을 고르게 밀어치는 스윙 궤적을 배웁니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "볼 머신기 반복 훈련",
+          "description": "자동 발사기에서 나오는 공을 스플릿 스텝 후 리듬감 있게 받아치는 감각을 키웁니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "야외 코트 복식 미니 게임",
+          "description": "동호회원들과 함께 게임 규칙을 적용하여 신나는 사교 랠리를 이어갑니다."
+        }
+      ],
+      "commonMistakes": "손목 힘으로만 라켓을 돌리면 엘보 통증이 생기므로 코어와 어깨 회전을 활용하세요.",
+      "estimatedMonthlyCost": "약 15만 ~ 25만 원 (레슨 및 코트 대여료)"
+    }
+  },
+  {
+    "id": "singing_bowl",
+    "name": "싱잉볼 명상 & 사운드 바스",
+    "category": "🧘 웰빙 & 힐링",
+    "iconName": "HeartHandshake",
+    "summary": "놋그릇의 은은한 울림과 진동으로 뇌파를 안정시키는 궁극의 휴식",
+    "description": "금속 그릇을 채로 문지르거나 두드려 발생하는 알파파 파동을 온몸으로 느끼며 잡념을 비워냅니다.",
+    "relatedHobbies": [
+      "kalimba_playing",
+      "tea_ceremony",
+      "aroma_perfume"
+    ],
+    "tags": [
+      "뇌파휴식",
+      "사운드힐링",
+      "딥슬립",
+      "명상",
+      "마음챙김"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "MINDFULNESS",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "티베트 수공예 싱잉볼 1개 (7인치 기준 5만~10만 원)",
+        "가죽 스틱 및 고무 링 밭침대",
+        "편안한 인센스 스틱과 요가 매트"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "림 테두리 문지르기 기법",
+          "description": "스틱을 45도 기울여 싱잉볼 겉 테두리를 일정하게 돌려 지속적인 공명 소리를 발생시킵니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "신체 부위별 파동 체험",
+          "description": "복부나 가슴 위에 놓거나 옆에 두고 진동이 몸속 파동으로 퍼져나감을 느껴봅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "자기 전 15분 사운드 바스 루틴",
+          "description": "불을 끄고 조용한 공간에서 깊은 호흡과 함께 수면 전 마음을 안정시킵니다."
+        }
+      ],
+      "commonMistakes": "스틱을 너무 세게 두드리면 강한 잡음이 섞이므로 부드럽게 스치듯 쳐야 합니다.",
+      "estimatedMonthlyCost": "약 0원 ~ 1만 원 (인센스 구매)"
+    }
+  },
+  {
+    "id": "tea_ceremony",
+    "name": "다도 & 싱글 오리진 잎차",
+    "category": "🧘 웰빙 & 힐링",
+    "iconName": "CupSoda",
+    "summary": "차를 우려내는 온도와 시간, 차 향기에 온전히 집중하는 정갈한 세레머니",
+    "description": "백차, 보이차, 우롱차 등 산지별 찻잎을 다관에 차분히 다스려 따뜻한 온기로 호흡을 가다듬습니다.",
+    "relatedHobbies": [
+      "pottery_craft",
+      "singing_bowl",
+      "aroma_perfume"
+    ],
+    "tags": [
+      "차우리기",
+      "정갈함",
+      "미각향미",
+      "힐링타임",
+      "고요함"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "MINDFULNESS",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "개완(다관) 및 숙우, 찻잔 2개 세트 (3만~6만 원)",
+        "샘플러 프리미엄 잎차 패키지 (우롱차/보이숙차)",
+        "온도 조절이 가능한 드립포트 전기포트"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "다기 예열(온호) 및 윤차",
+          "description": "뜨거운 물로 잔을 따뜻하게 데우고 첫 번째 우린 물은 차 향을 깨우기 위해 비워냅니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "침출 시간 조절하기",
+          "description": "20초, 30초, 40초 등 포수(우려내는 횟수)에 따라 변화하는 수색과 맛의 변화를 감상합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "차 테이스팅 노트 작성",
+          "description": "과일향, 흙향, 난초향 등 차가 주는 매력적인 아로마를 다도 노트에 다채롭게 기록합니다."
+        }
+      ],
+      "commonMistakes": "팔팔 끓는 100도 물을 녹차나 백차에 바로 부으면 쓴맛이 강해지니 80~85도로 식혀 부으세요.",
+      "estimatedMonthlyCost": "약 2만 ~ 3만 원 (새로운 잎차 구매)"
+    }
+  },
+  {
+    "id": "aroma_perfume",
+    "name": "나만의 프래그런스 조향",
+    "category": "🧘 웰빙 & 힐링",
+    "iconName": "Droplet",
+    "summary": "탑, 미들, 베이스 노트를 조합해 나의 분위기를 담은 에센셜 향수 제작",
+    "description": "시트러스, 우디, 플로럴 에센셜 오일의 드롭 수를 섬세하게 계산하여 올파토리(Olfactory) 미학을 다룹니다.",
+    "relatedHobbies": [
+      "oil_pastel_drawing",
+      "singing_bowl",
+      "tea_ceremony"
+    ],
+    "tags": [
+      "향수조향",
+      "에센셜오일",
+      "감성시그니처",
+      "올파토리",
+      "선물"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "MINDFULNESS",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "DIY 조향 올인원 키트 (베이스 오일 + 향료 12종 + 시향지)",
+        "정밀 전자저울 및 스포이트, 향수 용기 30ml",
+        "원두 콩 (시향 중 코 마비 방지용)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "올파토리 시향지 평가",
+          "description": "각 향료의 첫 향(Top)과 잔향(Base)의 느낌을 시향지에 적어가며 선호도를 점수 매깁니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "포뮬러 포뮬레이션 설계",
+          "description": "탑 20%, 미들 50%, 베이스 30%의 비율을 바탕으로 방울 수(Drop) 레시피를 계산합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "알코올 숙성 및 스프레이",
+          "description": "향수 베이스와 블렌딩 후 2주간 그늘진 곳에서 숙성시켜 깊은 잔향을 완성합니다."
+        }
+      ],
+      "commonMistakes": "너무 많은 향을 한 번에 섞으면 개성이 사라지고 무난해집니다. 메인 향료 3~4개에 집중하세요.",
+      "estimatedMonthlyCost": "약 2만 ~ 4만 원"
+    }
+  },
+  {
+    "id": "camping_backpacking",
+    "name": "미니멀 백패킹 & 차박",
+    "category": "🌿 자연 & 아웃도어",
+    "iconName": "Compass",
+    "summary": "배낭 하나에 최소한의 의식주를 담아 자연 속으로 떠나는 안식처",
+    "description": "도시의 소음에서 벗어나 숲이나 바닷가에 나만의 아늑한 텐트를 구축하고 밤하늘 별을 보는 로망 취미입니다.",
+    "relatedHobbies": [
+      "trail_running",
+      "vintage_record_collecting",
+      "home_barista"
+    ],
+    "tags": [
+      "백패킹",
+      "불멍",
+      "야외자연",
+      "미니멀라이프",
+      "자유도"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "MINDFULNESS",
+      "FITNESS"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "HIGH",
+    "budgetTier": "HIGH",
+    "timeRequired": "FULL_DAY",
+    "indoorOutdoor": "OUTDOOR",
+    "noveltyScore": 8,
+    "starterGuide": {
+      "preparationChecklist": [
+        "2인용 자립식 경량 텐트 및 R-value 매트, 에어 베개",
+        "50~60L 백패킹 배낭 및 침낭",
+        "이소가스 미니 버너 및 코펠 스티머"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "거실에서 피칭 연습하기",
+          "description": "야외에서 당황하지 않도록 폴대 결합과 폴 가이라인 묶는 법을 미리 익힙니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "가까운 국립공원 캠핑장 예약",
+          "description": "노지보다는 안전하고 개수대와 화장실이 구비된 정식 야영장에서 입문합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "Leave No Trace (흔적 안 남기기)",
+          "description": "자신이 발생시킨 모든 쓰레기와 잔여물을 깨끗하게 수거해 자연을 보호합니다."
+        }
+      ],
+      "commonMistakes": "바닥 한기 차단을 소홀히 하면 밤에 추위로 잠을 설칩니다. 폼 매트나 에어매트는 필수입니다.",
+      "estimatedMonthlyCost": "약 3만 ~ 5만 원 (캠핑장 대여료 및 가스)"
+    }
+  },
+  {
+    "id": "houseplant_gardening",
+    "name": "식집사 (반려식물 & 테라리움)",
+    "category": "🌿 자연 & 아웃도어",
+    "iconName": "Trees",
+    "summary": "새잎이 돋아나는 경이로움을 매일 관찰하는 수제 식물 테라리움",
+    "description": "몬스테라, 안스리움, 이끼 테라리움을 분갈이하고 조명과 통풍 환경을 맞춰주며 생명력을 가꿉니다.",
+    "relatedHobbies": [
+      "tea_ceremony",
+      "pottery_craft",
+      "oil_pastel_drawing"
+    ],
+    "tags": [
+      "식집사",
+      "테라리움",
+      "분갈이",
+      "그린인테리어",
+      "돌봄"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "MINDFULNESS",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 5,
+    "starterGuide": {
+      "preparationChecklist": [
+        "키우기 쉬운 입문 식물 (스킨답서스, 몬스테라)",
+        "통기성 좋은 토분 및 펄라이트 배합토",
+        "분무기 및 물주기 비커"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "흙의 겉흙 말라있는지 확인",
+          "description": "손가락 한 마디를 흙에 질러보아 바짝 말랐을 때 대야에 물을 충분히 줍니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "서큘레이터 통풍 확보",
+          "description": "식물 뿌리가 과습으로 무르지 않도록 바람이 통하는 창가나 서큘레이터 자리를 줍니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "유리병 수제 이끼 테라리움",
+          "description": "유리 용기에 숯과 마사토를 까르고 이끼와 미니어처 피규어를 배치해 작은 숲을 연출합니다."
+        }
+      ],
+      "commonMistakes": "사랑하는 마음에 물을 너무 자주 주면 뿌리가 썩는 과습 현상이 발생하니 흙 상태를 꼭 확인하세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원"
+    }
+  },
+  {
+    "id": "home_barista",
+    "name": "홈카페 & 핸드드립 바리스타",
+    "category": "🍳 요리 & 베이킹",
+    "iconName": "Coffee",
+    "summary": "원두의 분쇄도와 물 온도에 따라 다채로운 아로마를 추출하는 드립 아침",
+    "description": "스페셜티 원두를 핸드밀로 그라인딩하고 드립 포트로 정교한 나선형 물줄기를 내리는 고요한 리추얼입니다.",
+    "relatedHobbies": [
+      "tea_ceremony",
+      "wine_tasting",
+      "home_baking"
+    ],
+    "tags": [
+      "핸드드립",
+      "스페셜티원두",
+      "홈카페",
+      "아침리추얼",
+      "추출변수"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "MINDFULNESS",
+      "STRESS_RELIEF",
+      "KNOWLEDGE"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 5,
+    "starterGuide": {
+      "preparationChecklist": [
+        "하리오 V60 드립퍼 및 페이퍼 필터 세트",
+        "입문용 수동 핸드밀 그라인더",
+        "갓 볶은 싱글오리진 스페셜티 원두 200g"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "원두 20g 수동 그라인딩",
+          "description": "굵은 소금 정도의 크기로 결이 일정하도록 핸드밀을 부드럽게 돌립니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "30초 뜸들이기 (Bloom)",
+          "description": "92도 온수 40g을 적신 후 커피 가스(이산화탄소)가 고르게 빠져나가도록 기다립니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "3차 나선형 물줄기 추출",
+          "description": "총 300g의 물을 중심에서 밖으로 나선형을 그리며 2분 30초 안에 깔끔히 추출합니다."
+        }
+      ],
+      "commonMistakes": "오래된 분쇄 원두는 향미가 날아가버리므로 갓 볶은 홀빈(Whole Bean) 원두를 갈아 사용하세요.",
+      "estimatedMonthlyCost": "약 2만 ~ 3만 원 (원두 원두 구매)"
+    }
+  },
+  {
+    "id": "home_baking",
+    "name": "홈 베이킹 & 구움과자",
+    "category": "🍳 요리 & 베이킹",
+    "iconName": "Cake",
+    "summary": "달콤한 버터 향기가 집안을 채우는 휘낭시에 및 휘핑 베이킹",
+    "description": "밀가루, 버터, 계란, 설탕의 정확한 계량과 오븐 온도 조절을 통해 갓 구운 바삭하고 촉촉한 구움과자를 만듭니다.",
+    "relatedHobbies": [
+      "home_barista",
+      "leather_craft",
+      "pottery_craft"
+    ],
+    "tags": [
+      "버터향기",
+      "휘낭시에",
+      "정확한계량",
+      "선물용",
+      "달콤함"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "STRESS_RELIEF",
+      "NETWORKING"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "LOW",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "미니 오븐 또는 에어프라이어",
+        "0.1g 단위 정밀 전자저울 및 실리콘 알뜰주걱",
+        "휘낭시에 12구 틀 및 고급 발효버터"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "태운 버터(Beurre Noisette) 만들기",
+          "description": "냄비에 버터를 끓여 갈색빛과 헤이즐넛 풍미가 올라오도록 노릇하게 태웁니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "흰자 팬닝 및 휴지",
+          "description": "계란 흰자와 설탕, 박력분을 버무려 냉장고에서 1시간 유화 및 휴지 과정을 거칩니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "200도 오븐 굽기",
+          "description": "볼록한 배꼽이 예쁘게 부풀어 오르는 순간을 지켜보며 바삭하게 구워냅니다."
+        }
+      ],
+      "commonMistakes": "베이킹은 수치와 온도에 예민합니다. 레시피의 계량을 눈대중으로 수정하지 마세요.",
+      "estimatedMonthlyCost": "약 3만 ~ 5만 원 (재료비)"
+    }
+  },
+  {
+    "id": "wine_tasting",
+    "name": "와인 테이스팅 & 아로마 노트",
+    "category": "🍳 요리 & 베이킹",
+    "iconName": "Wine",
+    "summary": "품종과 빈티지, 페어링에 따라 오감을 자극하는 와인 테이스팅",
+    "description": "피노 누아, 카베르네 소비뇽 등 대표 품종의 테이스팅 요소를 분석하고 어울리는 치즈/핑거푸드를 연구합니다.",
+    "relatedHobbies": [
+      "home_barista",
+      "tennis_club",
+      "podcast_creation"
+    ],
+    "tags": [
+      "와인소믈리에",
+      "품종분석",
+      "테이스팅노트",
+      "지적사교",
+      "페어링"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "KNOWLEDGE",
+      "NETWORKING",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "LOW",
+    "budgetTier": "HIGH",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "크리스탈 보르도 와인글라스 2잔",
+        "기초 품종 (뉴질랜드 소비뇽블랑, 프랑스 피노누아 2병)",
+        "와인 테이스터 노트 전용 앱"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "시각적 관찰 (Visual)",
+          "description": "흰 배경에 잔을 기울여 테두리 컬러(루비, 가넷, 파랑) 및 와인의 눈물을 관찰합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "아로마 스월링 (Aroma)",
+          "description": "잔을 동글게 돌려 산소와 접촉시킨 뒤 오크, 과실, 향신료 향의 조화를 맡습니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "팔레트 맛 머금기 (Palate)",
+          "description": "한 모금 머금고 공기를 함께 들이마셔 산도, 타닌, 바디감, 피니시를 기록합니다."
+        }
+      ],
+      "commonMistakes": "와인 잔의 볼 부분을 손으로 잡으면 체온에 의해 와인 온도가 올라가 풍미가 변합니다. 줄기(Stem)를 잡으세요.",
+      "estimatedMonthlyCost": "약 5만 ~ 10만 원 (와인 구매)"
+    }
+  },
+  {
+    "id": "short_form_video",
+    "name": "숏폼 릴스/쇼츠 크리에이팅",
+    "category": "📸 미디어 & 콘텐츠",
+    "iconName": "Video",
+    "summary": "15초 안에 시선을 사로잡는 기발한 모션 기획과 감각적 편집",
+    "description": "스마트폰과 캡컷(CapCut) 앱을 이용해 템포감 있는 트렌디 음원과 유쾌한 컷편집으로 내 콘텐츠를 대중에게 전달합니다.",
+    "relatedHobbies": [
+      "digital_drawing",
+      "djing_mix",
+      "blog_writing"
+    ],
+    "tags": [
+      "릴스쇼츠",
+      "캡컷편집",
+      "트렌디",
+      "자기표현",
+      "바이럴"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "STRESS_RELIEF",
+      "NETWORKING"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "FREE",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "BOTH",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "스마트폰 및 캡컷(CapCut) 무료 영상 편집 앱",
+        "스마트폰 삼각대 자바라 모노포드",
+        "트렌딩 음원 챌린지 벤치마킹"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "후킹(Hook) 3초 기획",
+          "description": "영상이 시작하자마자 사람들의 호기심을 자극할 텍스트 자막과 비주얼 씬을 배치합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "비트 템포에 맞춘 컷 편집",
+          "description": "음악의 킥 사운드 마디에 맞춰 장면이 빠르게 전환되도록 인앤아웃 지점을 자릅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "자동 자막 생성 및 효과음",
+          "description": "음성 자막을 한 번에 추출하고 유쾌한 팝업 효과음을 더해 몰입도를 최대로 올립니다."
+        }
+      ],
+      "commonMistakes": "장면 전환이 너무 느리면 시청자가 1초 만에 스와이프해버립니다. 호흡을 빠르게 가져가세요.",
+      "estimatedMonthlyCost": "약 0원"
+    }
+  },
+  {
+    "id": "blog_writing",
+    "name": "감성 블로그 & 기획 에세이",
+    "category": "📸 미디어 & 콘텐츠",
+    "iconName": "BookOpen",
+    "summary": "내가 경험한 공간, 서적, 일상의 생각들을 담담히 풀어나가는 텍스트 서사",
+    "description": "노션이나 네이버 블로그, 브런치스토리에 사진과 밀도 높은 문장으로 나의 라이프스타일 궤적을 차곡차곡 기록합니다.",
+    "relatedHobbies": [
+      "film_photography",
+      "digital_drawing",
+      "philosophy_discussion"
+    ],
+    "tags": [
+      "글쓰기",
+      "에세이",
+      "브런치스토리",
+      "기록습관",
+      "자기성찰"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "MINDFULNESS",
+      "KNOWLEDGE"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "FREE",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 5,
+    "starterGuide": {
+      "preparationChecklist": [
+        "노션(Notion) 글감 메모 노방",
+        "브런치스토리 또는 네이버 블로그 계정",
+        "좋아하는 글귀나 문장 스크랩"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "오늘의 핵심 주제 한 문장",
+          "description": "‘오늘 먹은 라멘’ 대신 ‘추운 날 혼자 찾는 라멘집이 주는 온기’처럼 키워드 가치를 정의합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "사진 3장과 문단 배치",
+          "description": "시선이 머무는 세로 사진과 정돈된 문단 고찰을 교차 배치하여 편안하게 읽히도록 구성합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "발행 후 챌린지 달성",
+          "description": "주 2회 꾸준히 발행하며 나만의 독자를 확보하고 감성적인 서사를 완성해나갑니다."
+        }
+      ],
+      "commonMistakes": "글에 너무 많은 당위성이나 교훈을 넣으려 하면 부자연스러워집니다. 있는 그대로 솔직하게 쓰세요.",
+      "estimatedMonthlyCost": "약 0원"
+    }
+  },
+  {
+    "id": "astronomy_observation",
+    "name": "천체 관측 & 야간 굴절 망원경",
+    "category": "🧠 지적 & 탐구",
+    "iconName": "Moon",
+    "summary": "광공해가 적은 밤하늘 아래, 목성의 띠와 달의 크레이터를 지켜보는 신비로움",
+    "description": "천체 망원경의 적도기를 맞추고 밤하늘의 성운, 성단, 행성들을 찾아 고요하게 우주의 아득함을 탐구합니다.",
+    "relatedHobbies": [
+      "camping_backpacking",
+      "film_photography",
+      "lego_building"
+    ],
+    "tags": [
+      "달크레이터",
+      "목성관측",
+      "우주비밀",
+      "고요한밤",
+      "지적지식"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "KNOWLEDGE",
+      "MINDFULNESS",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "HARD",
+    "activityLevel": "LOW",
+    "budgetTier": "HIGH",
+    "timeRequired": "HALF_DAY",
+    "indoorOutdoor": "OUTDOOR",
+    "noveltyScore": 9,
+    "starterGuide": {
+      "preparationChecklist": [
+        "입문용 굴절 망원경 70mm~80mm (15만~30만 원대)",
+        "스마트폰 성도(Star Walk 2) 별자리 앱",
+        "따뜻한 방한복 및 붉은색 야간 조명 플래시"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "낮 시간에 파인더 축 맞추기",
+          "description": "멀리 보이는 전신주나 건물 간판에 망원경과 파인더 표적을 완벽히 일치시킵니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "달 표면 첫 관측",
+          "description": "가장 밝고 조준하기 쉬운 달을 향해 초점을 맞추고 정교한 표면 크레이터를 감상합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "목성과 토성의 고리 조준",
+          "description": "가을/겨울 밤하늘을 수놓는 토성의 고리와 목성의 4대 위성을 직접 찾아 시야에 넣습니다."
+        }
+      ],
+      "commonMistakes": "밤에 흰색 플래시를 비추면 암적응이 깨집니다. 반드시 적색 라이트를 사용하세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원 (기름값 및 야간 핫팩)"
+    }
+  },
+  {
+    "id": "board_game_design",
+    "name": "보드게임 개발 & 전략 매니아",
+    "category": "🧠 지적 & 탐구",
+    "iconName": "Box",
+    "summary": "복잡한 아그리콜라/카탄 메커니즘 분석부터 나만의 규칙 카드 게임 제작",
+    "description": "컴포넌트와 자원 관리 규칙, 승점 시스템을 직접 설계하거나 최고 난이도의 전략 보드게임을 정복합니다.",
+    "relatedHobbies": [
+      "retro_gaming",
+      "lego_building",
+      "digital_drawing"
+    ],
+    "tags": [
+      "전략보드게임",
+      "규칙설계",
+      "자원관리",
+      "두뇌회전",
+      "컴포넌트"
+    ],
+    "socialType": "GROUP",
+    "purpose": [
+      "KNOWLEDGE",
+      "CREATION",
+      "NETWORKING"
+    ],
+    "difficulty": "HARD",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "HALF_DAY",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 8,
+    "starterGuide": {
+      "preparationChecklist": [
+        "프로토타입용 무지 카드 및 인덱스 카드, 주사위",
+        "보드게임게이머 모임 검색 (보드라이프 등)",
+        "좋아하는 승점 메커니즘 테마 정리"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "메인 메커니즘 하나 고르기",
+          "description": "일꾼 배치, 덱 빌딩, 타일 놓기 등 게임의 가장 핵심이 되는 행동 원칙을 정합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "종이 프로토타입 테스팅",
+          "description": "화려한 디자인 대신 종이에 연필로 써서 바로 혼자 테스트 플레이를 돌려봅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "친구들과 벨런스 테스트",
+          "description": "특정 카드가 너무 강력하지 않은지 자원 비용 밸런스를 계속해서 패치합니다."
+        }
+      ],
+      "commonMistakes": "규칙이 너무 복잡하면 플레이어가 피로감을 느낍니다. \"쉬운 접근, 깊은 전략\"을 목표로 잡으세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 3만 원 (새 보드게임 구매)"
+    }
+  },
+  {
+    "id": "lego_building",
+    "name": "레고 조립 & 디오라마 디스플레이",
+    "category": "🧩 수집 & 제작",
+    "iconName": "Layers",
+    "summary": "수천 개의 브릭을 매뉴얼에 맞춰 차곡차곡 조립하며 잊는 세상의 잡념",
+    "description": "건축물 모듈러, 자일린, 테크닉 자동차 조립을 통해 손끝으로 가시적인 완성감을 느끼는 힐링 수집 취미입니다.",
+    "relatedHobbies": [
+      "leather_craft",
+      "astronomy_observation",
+      "board_game_design"
+    ],
+    "tags": [
+      "레고브릭",
+      "디오라마",
+      "몰입조립",
+      "수집인테리어",
+      "스트레스제포"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "STRESS_RELIEF",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "HIGH",
+    "timeRequired": "HALF_DAY",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 6,
+    "starterGuide": {
+      "preparationChecklist": [
+        "레고 아이디어 또는 스피드 챔피언 세트 (3만~10만 원대)",
+        "부품 분류용 다이소 부품함 트레이",
+        "완성품 먼지 차단용 아크릴 장식장"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "번호별 브릭 봉투 분류",
+          "description": "조립 전 번호가 적힌 봉투별로 트레이에 부품을 모아두어 찾는 시간을 단축시킵니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "매뉴얼 1:1 정밀 대응",
+          "description": "유사한 색상의 브릭을 혼동하지 않도록 스터드(돌기) 개수를 정확히 세며 조립합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "LED 조향 조명 커스텀",
+          "description": "완성 후 미니 LED 조명 줄을 브릭 사이에 매립하여 밤에 빛나는 오브제로 연출합니다."
+        }
+      ],
+      "commonMistakes": "브릭을 아무렇게나 바닥에 쏟아두면 작은 브릭을 잃어버리기 쉽습니다. 반드시 분류 트레이를 쓰세요.",
+      "estimatedMonthlyCost": "약 5만 ~ 10만 원 (신제품 세트)"
+    }
+  },
+  {
+    "id": "vintage_record_collecting",
+    "name": "빈티지 LP 수집 & 턴테이블",
+    "category": "🧩 수집 & 제작",
+    "iconName": "Radio",
+    "summary": "턴테이블 바늘이 바이닐 홈을 지나며 내는 따뜻한 질감의 아날로그 사운드",
+    "description": "좋아하는 재즈, 록, 시티팝 명반 레프리카 LP를 샵에서 디깅(Digging)하고 앨범 자켓을 수집하는 컬렉팅 취미입니다.",
+    "relatedHobbies": [
+      "film_photography",
+      "tea_ceremony",
+      "home_barista"
+    ],
+    "tags": [
+      "바이닐LP",
+      "턴테이블",
+      "디깅",
+      "아날로그감성",
+      "음악수집"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "MINDFULNESS",
+      "CREATION",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 7,
+    "starterGuide": {
+      "preparationChecklist": [
+        "입문용 오디오테크니카 턴테이블 (15만~25만 원대)",
+        "블루투스 액티브 스피커",
+        "바이닐 전용 세척 브러시 및 아우터 슬리브"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "LP 레코드숍 디깅 투어",
+          "description": "회현지하상가나 용산 바이닐앤플라스틱 같은 LP샵에서 자켓아트와 곡을 살펴봅니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "침압 조절 및 안티스케이팅",
+          "description": "바늘이 바이닐 판을 손상시키지 않도록 적정 톤암 침압을 정교하게 맞춥니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "주말 아침 LP 청음 루틴",
+          "description": "차 한 잔과 함께 A면 전체를 스킵 없이 온전히 감상하는 느림의 미학을 맛봅니다."
+        }
+      ],
+      "commonMistakes": "바이닐 소리 골에 먼지가 끼면 치직거리는 잡음이 생기니 재생 전 정전기 제거 브러시로 닦아주세요.",
+      "estimatedMonthlyCost": "약 4만 ~ 7만 원 (LP 판 1~2장 구매)"
+    }
+  },
+  {
+    "id": "retro_gaming",
+    "name": "레트로 게임기 에뮬레이터 & 모딩",
+    "category": "🎮 디지탈 & 테크",
+    "iconName": "Gamepad2",
+    "summary": "추억의 8비트/16비트 오락실 고전 게임을 커스텀 하드웨어로 복원",
+    "description": "라즈베리파이나 미유미니(Miyoo Mini) 휴대용 게임기에 한글 롬 세팅과 테마 파티션을 모딩해 플레이합니다.",
+    "relatedHobbies": [
+      "djing_mix",
+      "board_game_design",
+      "lego_building"
+    ],
+    "tags": [
+      "레트로게임",
+      "미유미니",
+      "에뮬레이터",
+      "추억복원",
+      "테크모딩"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "STRESS_RELIEF",
+      "KNOWLEDGE",
+      "CREATION"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 8,
+    "starterGuide": {
+      "preparationChecklist": [
+        "미유미니 플러스 / 안버닉 휴대용 게임기 (5만~8만 원대)",
+        "고속 SanDisk MicroSD 카드 64GB",
+        "커스텀 펌웨어 Onion OS 다운로드"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "Onion OS 커스텀 펌웨어 설치",
+          "description": "순정 SD카드 대신 안정적인 커스텀 펌웨어를 미크로 SD에 플래싱합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "게임별 스크래퍼 베젤 세팅",
+          "description": "게임 타이틀 화면과 앨범 커버를 자동 매칭시켜 고품격 인터페이스를 완성합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "세이브 스탯 기능을 활용한 엔딩",
+          "description": "어릴 적 어려워서 못 깼던 스트리트 파이터나 포켓몬스터 엔딩을 마침내 봅니다."
+        }
+      ],
+      "commonMistakes": "중국산 번들 저가 SD카드는 금방 파일이 깨지므로 유명 브랜드 정품 SD카드를 구입해 교체하세요.",
+      "estimatedMonthlyCost": "약 0원 ~ 1만 원"
+    }
+  },
+  {
+    "id": "coding_toy_project",
+    "name": "코딩 소소한 토이 프로젝트",
+    "category": "🎮 디지탈 & 테크",
+    "iconName": "Code",
+    "summary": "나에게 꼭 필요한 자동화 봇이나 소소한 웹 툴을 내 손으로 만들기",
+    "description": "파이썬으로 맛집 예약 알림 봇을 만들거나, 소소한 일상 기록 웹 페이지를 직접 코딩하여 배포해봅니다.",
+    "relatedHobbies": [
+      "board_game_design",
+      "retro_gaming",
+      "blog_writing"
+    ],
+    "tags": [
+      "코딩",
+      "파이썬",
+      "토이프로젝트",
+      "자동화",
+      "문제해결"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "CREATION",
+      "KNOWLEDGE",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "MEDIUM",
+    "activityLevel": "LOW",
+    "budgetTier": "FREE",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 8,
+    "starterGuide": {
+      "preparationChecklist": [
+        "노트북 및 VS Code 설치",
+        "Python 또는 JavaScript 기초 가이드북",
+        "GitHub 계정 만들기"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "내가 필요한 작은 문제 정의",
+          "description": "‘날씨를 매일 아침 카톡으로 보내주는 봇’처럼 명확하고 작은 아이디어를 선정합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "코드 몇 줄로 기쁨 경험",
+          "description": "오픈 API를 호출하여 데이터가 콘솔창에 찍히는 기쁨을 맛봅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "무료 배포 서비싱",
+          "description": "Vercel이나 Netlify를 이용해 내 지인들에게 쓸 수 있는 URL 링크를 전달합니다."
+        }
+      ],
+      "commonMistakes": "처음부터 너무 거대한 서비스를 만들려 하지 마세요. 1~2일 안에 끝나는 스코프가 제일 좋습니다.",
+      "estimatedMonthlyCost": "약 0원"
+    }
+  },
+  {
+    "id": "video_gaming",
+    "name": "PC & 콘솔 게임 (비디오 게임)",
+    "category": "🎮 디지탈 & 테크",
+    "iconName": "Gamepad2",
+    "summary": "스팀, 콘솔, 모바일으로 즐기는 몰입감 넘치는 게임 플레이",
+    "description": "RPG, FPS, 시뮬레이션, 닌텐도 스위치 등 흥미진진한 세계관 속에서 스트레스를 해소하고 플레이어 간 소통 및 성취감을 느끼는 대표 대중 취미입니다.",
+    "relatedHobbies": [
+      "retro_gaming",
+      "board_gaming_social",
+      "coding_toy_project"
+    ],
+    "tags": [
+      "비디오게임",
+      "스팀",
+      "닌텐도",
+      "몰입감",
+      "스트레스해소"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "NETWORKING",
+      "CREATION"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 3,
+    "starterGuide": {
+      "preparationChecklist": [
+        "스마트폰, PC 또는 닌텐도/플레이스테이션 기기",
+        "관심 있는 장르 게임(RPG, 모험, 협동) 다운로드",
+        "편안한 게이밍 의자 및 음성 패드/헤드셋"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "튜토리얼 플레이 진행",
+          "description": "게임의 기본 조작법과 스토리 흐름을 차근차근 익혀나갑니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "친구나 멀티플레이어 파티 구성",
+          "description": "친구들과 같이 멀티플레이 보스전이나 협동 퀘스트를 수행합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "나만의 최고 기록 도전",
+          "description": "스테이지 클리어 및 레벨업의 짜릿한 달성감을 느껴봅니다."
+        }
+      ],
+      "commonMistakes": "장시간 무리한 플레이는 눈과 목 통증을 유발할 수 있으니 1시간마다 10분씩 쉬어주세요.",
+      "estimatedMonthlyCost": "약 0원 ~ 3만 원 (게임 할인 구매)"
+    }
+  },
+  {
+    "id": "music_listening",
+    "name": "음악 감상 & 플레이리스트 디깅",
+    "category": "🎵 음악 & 공연",
+    "iconName": "Headphones",
+    "summary": "K-POP부터 클래식, 인디까지 기분에 따라 소장하고 듣는 플레이리스트",
+    "description": "지니, 멜론, 스포티파이, 유튜브 뮤직 등을 통해 내 취향에 딱 맞는 신곡과 아티스트를 발견하고 감성 플레이리스트를 수집 및 공유하는 일상 취미입니다.",
+    "relatedHobbies": [
+      "vintage_record_collecting",
+      "ukulele_playing",
+      "djing_mix"
+    ],
+    "tags": [
+      "음악감상",
+      "플레이리스트",
+      "스포티파이",
+      "힐링소리",
+      "취향발견"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "STRESS_RELIEF",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "FREE",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 2,
+    "starterGuide": {
+      "preparationChecklist": [
+        "스마트폰 음악 스트리밍 서비스 구독 (스포티파이, 유튜브 뮤직 등)",
+        "착용감 좋은 노이즈 캔슬링 이어폰/헤드폰",
+        "플레이리스트 정리를 위한 테마별 노트/앱"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "장르별 데일리 믹스 청음",
+          "description": "알고리즘이 추천해주는 최신곡과 숨은 명곡을 매일 탐색합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "상황별 시그니처 플레이리스트 작성",
+          "description": "‘비 오는 날 감성’, ‘집중할 때 듣는 교향곡’ 등 나만의 테마 앨범을 모읍니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "SNS 음악 공유 및 사교",
+          "description": "친구들이나 인스타그램 스토리에 오늘의 인생 곡을 공유해 소통합니다."
+        }
+      ],
+      "commonMistakes": "이어폰 볼륨을 너무 크게 오래 들으면 난청이 생길 수 있으니 적정 음량을 유지하세요.",
+      "estimatedMonthlyCost": "약 0원 ~ 1만 원 (스트리밍 구독료)"
+    }
+  },
+  {
+    "id": "movie_ott_watching",
+    "name": "영화 감상 & OTT 드라마 정주행",
+    "category": "📸 미디어 & 콘텐츠",
+    "iconName": "Tv",
+    "summary": "넷플릭스·극장 영화와 웰메이드 몰아보기 시리즈로 떠나는 감성 여행",
+    "description": "시네마 극장 관람부터 집에서 편안하게 최신 영화, 넷플릭스/티빙/디즈니+ 인기 시리즈를 정주행하고 시청평을 나누는 일상 취미입니다.",
+    "relatedHobbies": [
+      "webtoon_manga",
+      "blog_writing",
+      "short_form_video"
+    ],
+    "tags": [
+      "영화감상",
+      "넷플릭스",
+      "드라마정주행",
+      "시네마",
+      "힐링영화"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "MINDFULNESS",
+      "KNOWLEDGE"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 2,
+    "starterGuide": {
+      "preparationChecklist": [
+        "넷플릭스, 티빙 등 OTT 구독권 또는 극장 영화 티켓",
+        "맛있는 팝콘과 최애 음료",
+        "영화 기록 앱 (왓챠피디아 등)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "오늘의 감성 영화/시리즈 선정",
+          "description": "평점이 높거나 평소 궁금했던 감독 및 배우의 대표작을 선택합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "불을 끄고 영화에 몰입하기",
+          "description": "주변 조명을 어둡게 조절하고 대사와 카메라 연출에 온전히 빠져듭니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "왓챠피디아 별점 및 한 줄 서평",
+          "description": "감상이 끝나고 내 인상 깊었던 명대사와 소감을 기록으로 남겨둡니다."
+        }
+      ],
+      "commonMistakes": "주말 내내 수면 없이 엎드려 계속 보면 목 건강에 안 좋으니 바른 자세로 시청하세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원 (OTT 멤버십)"
+    }
+  },
+  {
+    "id": "travel_and_day_trips",
+    "name": "국내외 여행 & 주말 드라이브",
+    "category": "🌿 자연 & 아웃도어",
+    "iconName": "MapPin",
+    "summary": "새로운 풍경과 낯선 도시에서 만나는 뜻밖의 즐거움과 환기",
+    "description": "주말 근교 드라이브, 당일치기 기차 여행, 해외 자유 여행까지 일상에서 벗어나 새로운 시각과 에너지 충전을 전해주는 인기 취미입니다.",
+    "relatedHobbies": [
+      "camping_backpacking",
+      "film_photography",
+      "cafe_and_foodie_tour"
+    ],
+    "tags": [
+      "여행",
+      "드라이브",
+      "당일치기",
+      "새로운풍경",
+      "힐링여행"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "MINDFULNESS",
+      "NETWORKING"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "MEDIUM",
+    "budgetTier": "MEDIUM",
+    "timeRequired": "FULL_DAY",
+    "indoorOutdoor": "OUTDOOR",
+    "noveltyScore": 5,
+    "starterGuide": {
+      "preparationChecklist": [
+        "가벼운 보스턴백/캐리어 및 이동 수단 (기차/자차/버스)",
+        "네이버 지도/구글 맵 가볼 만한 곳 저장",
+        "카메라 및 가벼운 보조배터리"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "목적지 테마 정하기",
+          "description": "‘동해 바다 보러 가기’, ‘근교 수목원 드라이브’ 등 주제를 잡습니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "현지 시장과 경치 감상",
+          "description": "골목길을 거닐고 맛있는 지역 특산 음식을 맛보며 낯선 공기를 만끽합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "여행 일기 및 사진 정리",
+          "description": "돌아온 후 마음에 드는 풍경 사진을 올리고 추억을 기록합니다."
+        }
+      ],
+      "commonMistakes": "스케줄을 분 단위로 너무 빡빡하게 짜면 여행이 숙제처럼 피곤해지니 여유를 남겨두세요.",
+      "estimatedMonthlyCost": "약 5만 ~ 15만 원 (교통비 및 경비)"
+    }
+  },
+  {
+    "id": "cafe_and_foodie_tour",
+    "name": "카페 투어 & 맛집 탐방",
+    "category": "🍳 요리 & 베이킹",
+    "iconName": "Utensils",
+    "summary": "감성적인 인테리어의 신상 카페와 검증된 맛집을 찾아 떠나는 미식 기행",
+    "description": "스페셜티 디저트 카페, 시그니처 로스터리, 소문난 지역 대표 맛집을 방문하며 입과 눈이 즐거운 미식 경험을 쌓고 SNS에 기록합니다.",
+    "relatedHobbies": [
+      "home_barista",
+      "home_baking",
+      "blog_writing",
+      "wine_tasting"
+    ],
+    "tags": [
+      "카페투어",
+      "맛집탐방",
+      "디저트",
+      "감성인테리어",
+      "미식기행"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "STRESS_RELIEF",
+      "NETWORKING",
+      "CREATION"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "BOTH",
+    "noveltyScore": 3,
+    "starterGuide": {
+      "preparationChecklist": [
+        "네이버지도/인스타그램 맛집 저장 리스트",
+        "사진 촬영용 스마트폰",
+        "함께 갈 친구나 편안한 도서 한 권"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "이번 주 방문할 신상 스팟 탐색",
+          "description": "인스타그램 핫플이나 캐치테이블 맛집 후기를 검색합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "시그니처 메뉴와 음료 맛보기",
+          "description": "그 가게만의 시그니처 음료나 원조 메뉴를 음미합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "인스타 피드 및 네이버 영수증 리뷰",
+          "description": "예쁜 매장 사진과 함께 친절한 후기를 작성합니다."
+        }
+      ],
+      "commonMistakes": "주말 핫플은 웨이팅이 길 수 있으니 캐치테이블 원격 줄서기 앱을 적극 활용하세요.",
+      "estimatedMonthlyCost": "약 3만 ~ 6만 원"
+    }
+  },
+  {
+    "id": "reading_books",
+    "name": "독서 & 북클럽",
+    "category": "🧠 지적 & 탐구",
+    "iconName": "Book",
+    "summary": "소설, 인문, 자기계발서 속 깊은 문장들과 고요히 대화하는 책 읽기",
+    "description": "밀리의 서재, 종이책, 온·오프라인 독서 모임을 통해 다양한 경험과 생각의 지평을 넓히고 서평을 정리하는 마음양식 취미입니다.",
+    "relatedHobbies": [
+      "blog_writing",
+      "tea_ceremony",
+      "board_game_design"
+    ],
+    "tags": [
+      "독서",
+      "책읽기",
+      "북클럽",
+      "마음양식",
+      "독서노트"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "KNOWLEDGE",
+      "MINDFULNESS",
+      "STRESS_RELIEF"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 2,
+    "starterGuide": {
+      "preparationChecklist": [
+        "읽고 싶었던 책 1권 또는 밀리의 서재 전자책 앱",
+        "인상 깊은 구절을 적을 밑줄 필기구 및 독서 노트",
+        "조용한 조명의 집 안 코너나 동네 서점"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "하루 20분 독서 루틴 설정",
+          "description": "잠들기 전이나 출퇴근길에 부담 없이 20분씩 책을 폅니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "마음을 울리는 문장 인덱스 착착",
+          "description": "공감되는 구절에 인덱스 스티커를 붙이고 나만의 노트에 적어둡니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "북클럽 토론 참여",
+          "description": "독서 모임이나 블로그에 한 줄 발제를 올려 사람들과 느낀 점을 나눕니다."
+        }
+      ],
+      "commonMistakes": "완독해야 한다는 부담감을 가질 필요 없습니다. 마음에 드는 챕터부터 가볍게 읽어도 충분합니다.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원 (책 구매 및 구독료)"
+    }
+  },
+  {
+    "id": "running_jogging",
+    "name": "러닝 & 데일리 조깅",
+    "category": "🏃 액티비티 & 스포츠",
+    "iconName": "Activity",
+    "summary": "운동화만 신으면 시작되는 도심과 천변에서의 시원한 질주",
+    "description": "나이키 러닝 앱(NRC)으로 페이스를 기록하며 심폐 지구력 향상과 러너스 하이를 경험하는 접근성 최상의 생활 운동입니다.",
+    "relatedHobbies": [
+      "trail_running",
+      "tennis_club",
+      "home_workout_yoga"
+    ],
+    "tags": [
+      "러닝",
+      "조깅",
+      "NRC",
+      "유산소운동",
+      "체력증진"
+    ],
+    "socialType": "BOTH",
+    "purpose": [
+      "FITNESS",
+      "STRESS_RELIEF",
+      "NETWORKING"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "HIGH",
+    "budgetTier": "FREE",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "OUTDOOR",
+    "noveltyScore": 2,
+    "starterGuide": {
+      "preparationChecklist": [
+        "쿠셔닝이 좋은 러닝화 한 겨레",
+        "땀 흡수가 잘 되는 통기성 러닝 웨어",
+        "나이키 러닝 클럽(NRC) 앱 설치"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "5분 걷기 + 15분 조깅 인터벌",
+          "description": "갑자기 숨차게 뛰지 말고 몸을 풀어준 뒤 대화 가능한 보폭으로 가볍게 땁니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "3km 목표 달성해보기",
+          "description": "천변이나 운동장 3km 코스를 일정 페이스(6~7분대)로 고르게 뛰어봅니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "지역 러닝 크루 주말 런 동참",
+          "description": "크루 사람들과 시원한 야간 도심 러닝을 함께하며 활력을 모읍니다."
+        }
+      ],
+      "commonMistakes": "준비 운동 없이 갑자기 뛰어오르면 아킬레스건이나 무릎 부상이 올 수 있으니 고관절 스트레칭을 꼭 해주세요.",
+      "estimatedMonthlyCost": "약 0원"
+    }
+  },
+  {
+    "id": "webtoon_manga",
+    "name": "웹툰 & 만화 정주행",
+    "category": "📸 미디어 & 콘텐츠",
+    "iconName": "Sparkles",
+    "summary": "네이버·카카오 웹툰의 흥미진진한 몰아보기",
+    "description": "판타지, 로맨스, 무협, 스릴러 등 재미있는 웹툰 작품들을 출퇴근길이나 쉬는 날 정주행하며 일상의 소소한 소락을 즐깁니다.",
+    "relatedHobbies": [
+      "movie_ott_watching",
+      "digital_drawing",
+      "retro_gaming"
+    ],
+    "tags": [
+      "웹툰",
+      "네이버웹툰",
+      "카카오웹툰",
+      "정주행",
+      "소소한재미"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "STRESS_RELIEF",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "FREE",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 2,
+    "starterGuide": {
+      "preparationChecklist": [
+        "네이버웹툰 / 카카오페이지 앱",
+        "편안하게 누울 수 있는 쿠션",
+        "소소한 과자 및 주전부리"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "요일별 인기도 상위작 탐색",
+          "description": "관심 있는 장르(로판, 무협, 스릴러) 완결작 및 요일별 1위 작품을 클릭합니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "무료 쿠폰/혜택 활용",
+          "description": "매일 무료 쿠폰과 이벤트를 통해 부담 없이 완결까지 주르륵 이어 읽습니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "베스트 댓글과 반응 공유",
+          "description": "독자들의 기발하고 유쾌한 베댓을 읽으며 함께 재미를 곱절로 느낍니다."
+        }
+      ],
+      "commonMistakes": "다음 화가 궁금해서 쿠키를 너무 과도하게 지르지 않도록 예산을 미리 정해두세요.",
+      "estimatedMonthlyCost": "약 0원 ~ 1만 원"
+    }
+  },
+  {
+    "id": "board_gaming_social",
+    "name": "보드게임 카페 & 사교 게임",
+    "category": "🧠 지적 & 탐구",
+    "iconName": "Sparkles",
+    "summary": "루미큐브, 할리갈리, 스플렌더 등 친구들과 웃고 즐기는 신나는 놀이",
+    "description": "보드게임 카페나 모임에서 다함께 가벼운 심리전과 추리, 웃음 가득한 전략을 펼치며 친목을 쌓는 활동입니다.",
+    "relatedHobbies": [
+      "board_game_design",
+      "retro_gaming",
+      "video_gaming"
+    ],
+    "tags": [
+      "보드게임카페",
+      "루미큐브",
+      "스플렌더",
+      "사교놀이",
+      "웃음만발"
+    ],
+    "socialType": "GROUP",
+    "purpose": [
+      "NETWORKING",
+      "STRESS_RELIEF",
+      "KNOWLEDGE"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "LOW",
+    "budgetTier": "LOW",
+    "timeRequired": "1HOUR",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 3,
+    "starterGuide": {
+      "preparationChecklist": [
+        "가까운 보드게임 카페 이용권 (시간당 3천 원 내외)",
+        "함께 즐길 친구나 소모임 동호회원",
+        "시원한 카페 음료"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "초보자 친화적 보드게임 추천받기",
+          "description": "직원이나 앱 설명서를 통해 루미큐브, 뱅, 스플렌더 같은 검증된 게임을 고릅니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "룰 영상 3분 시청",
+          "description": "유튜브 태블릿 영상으로 핵심 규칙과 승리 조건을 빠르게 이해합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "벌칙 게임을 걸고 신나는 한판",
+          "description": "유쾌한 입담과 심리전으로 즐거운 미니 게임을 즐깁니다."
+        }
+      ],
+      "commonMistakes": "승부에 너무 연연하면 분위기가 경직될 수 있습니다. 유쾌한 소통에 초점을 맞추세요.",
+      "estimatedMonthlyCost": "약 1만 ~ 2만 원"
+    }
+  },
+  {
+    "id": "home_workout_yoga",
+    "name": "홈트레이닝 & 요가·스트레칭",
+    "category": "🧘 웰빙 & 힐링",
+    "iconName": "Heart",
+    "summary": "유튜브를 따라 집에서 매트 하나로 다지는 건강한 신체 밸런스",
+    "description": "폼롤러 스트레칭, 홈트 유산소, 요가 동작으로 집에서 자율적으로 자세를 바르게 교정하고 신체 균형을 잡습니다.",
+    "relatedHobbies": [
+      "running_jogging",
+      "singing_bowl",
+      "indoor_bouldering"
+    ],
+    "tags": [
+      "홈트레이닝",
+      "요가",
+      "폼롤러",
+      "자세교정",
+      "매트운동"
+    ],
+    "socialType": "SOLO",
+    "purpose": [
+      "FITNESS",
+      "STRESS_RELIEF",
+      "MINDFULNESS"
+    ],
+    "difficulty": "EASY",
+    "activityLevel": "MEDIUM",
+    "budgetTier": "FREE",
+    "timeRequired": "30MIN",
+    "indoorOutdoor": "INDOOR",
+    "noveltyScore": 2,
+    "starterGuide": {
+      "preparationChecklist": [
+        "두툼한 TPE 요가 매트 (8mm 이상)",
+        "근육 이완용 폼롤러 및 마사지 볼",
+        "유튜브 홈트 채널 (비타민신지니, 요가소년 등)"
+      ],
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "폼롤러 전신 근막 이완",
+          "description": "종아리, 허벅지, 등 근육을 폼롤러로 문질러 뭉친 결절을 풀어줍니다."
+        },
+        {
+          "stepNumber": 2,
+          "title": "20분 전신 요가 수리야 나마스카라",
+          "description": "호흡에 맞춰 몸을 쭉 늘려주는 태양 예배 자세를 연달아 수행합니다."
+        },
+        {
+          "stepNumber": 3,
+          "title": "코어 플랭크 & 사바사나 마무리",
+          "description": "코어 힘을 기르고 매트에 누워 깊은 이완 호흡으로 세션을 마칩니다."
+        }
+      ],
+      "commonMistakes": "동작을 무리하게 꺾으면 허리 부상이 올 수 있으니 본인 유연성에 맞춰 통증이 없는 선까지만 진행하세요.",
+      "estimatedMonthlyCost": "약 0원"
+    }
+  }
+]
