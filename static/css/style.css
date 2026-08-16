@@ -1,0 +1,331 @@
+/*
+  HobbyMatch 공통 스타일.
+
+  의도:
+    타이틀·진단·추천·탐색 HTML이 같은 헤더·카드·폼 모양을 쓰도록 클래스를 한 파일에 모은다.
+    색은 :root 변수로 정의해, 나중에 테마만 바꾸기 쉽게 한다.
+*/
+
+/* ---------- 디자인 토큰(재사용하는 색·모서리) ---------- */
+:root {
+    --bg: #020617;
+    --surface: #0f172a;
+    --border: #1e293b;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --accent: #818cf8;
+    --accent-strong: #4f46e5;
+    --radius: 12px;
+  }
+  
+  /* 모든 요소의 너비 계산을 border 포함으로 통일. 레이아웃이 삐뚤어지는 일을 줄인다. */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    min-height: 100%;
+  }
+  
+  body {
+    font-family: "Segoe UI", "Apple SD Gothic Neo", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  /* ---------- 상단 헤더: 스크롤해도 메뉴가 따라오게 sticky ---------- */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .header-inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+  }
+  
+  /* 글자 로고 옆의 그라데이션 사각형. 이미지 파일 없이도 브랜드 느낌을 낸다. */
+  .logo-mark {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  }
+  
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  
+  .logo-name {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  
+  .logo-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #c7d2fe;
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.35);
+    border-radius: 999px;
+    padding: 0.1rem 0.45rem;
+    margin-left: 0.35rem;
+  }
+  
+  .logo-slogan {
+    font-size: 0.75rem;
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .site-nav {
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #cbd5e1;
+  }
+  
+  .nav-link:hover {
+    background: rgba(30, 41, 59, 0.8);
+    color: #fff;
+  }
+  
+  /* base.html 이 active_tab 에 맞춰 붙이는 현재 메뉴 표시 */
+  .nav-link.is-active {
+    background: rgba(79, 70, 229, 0.3);
+    color: #c7d2fe;
+    border: 1px solid rgba(99, 102, 241, 0.4);
+  }
+  
+  /* ---------- 본문: 너무 넓지 않게 가운데 정렬 ---------- */
+  .site-main {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+  }
+  
+  .hero h1,
+  .placeholder-page h1,
+  .title-screen h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  
+  /* ---------- 첫 화면 타이틀: 가운데 큰 제목 + 시작 버튼 ---------- */
+  .title-screen {
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .title-screen h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -0.03em;
+  }
+  
+  .title-screen .lede {
+    max-width: 36rem;
+    margin: 0 0 2rem;
+    font-size: 1.05rem;
+  }
+  
+  /* <a>를 버튼처럼 보이게. 누르면 취미 탐색 탭으로 이동한다. */
+  .cta-button {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0.75rem;
+    background: var(--accent-strong);
+    border: 1px solid var(--accent-strong);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  
+  .cta-button:hover {
+    background: #4338ca;
+    border-color: #4338ca;
+  }
+  
+  .eyebrow {
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  
+  .lede,
+  .muted,
+  .placeholder-page p {
+    color: var(--muted);
+  }
+  
+  /* ---------- 진단 폼·탐색 필터 ---------- */
+  .diagnose-form,
+  .filter-form {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  fieldset {
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  
+  legend {
+    font-weight: 700;
+    padding: 0 0.35rem;
+  }
+  
+  /* 칸 수가 늘어나면 자동으로 여러 줄이 되게 auto-fill */
+  .choice-grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  }
+  
+  .choice-card {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    padding: 0.5rem 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+  }
+  
+  .choice-card:hover {
+    border-color: var(--border);
+    background: rgba(15, 23, 42, 0.6);
+  }
+  
+  .pref-row {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+  
+  .pref-row label,
+  .filter-form label {
+    display: grid;
+    gap: 0.35rem;
+    font-size: 0.9rem;
+  }
+  
+  select,
+  input[type="search"],
+  button {
+    font: inherit;
+    padding: 0.45rem 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  button {
+    background: var(--accent-strong);
+    border-color: var(--accent-strong);
+    font-weight: 700;
+    cursor: pointer;
+    justify-self: start;
+  }
+  
+  .filter-form {
+    grid-template-columns: 1fr 16rem auto;
+    align-items: end;
+  }
+  
+  /* ---------- 추천·탐색 취미 카드 ---------- */
+  .card-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    margin-top: 1.5rem;
+  }
+  
+  .hobby-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem;
+  }
+  
+  .hobby-card h2 {
+    margin: 0.35rem 0 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .badge {
+    margin: 0;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  
+  details {
+    margin-top: 0.75rem;
+  }
+  
+  /* ---------- 좁은 화면: 슬로건 숨기고 메뉴를 한 줄로 ---------- */
+  @media (max-width: 720px) {
+    .header-inner {
+      flex-wrap: wrap;
+    }
+  
+    .logo-slogan {
+      display: none;
+    }
+  
+    .site-nav {
+      width: 100%;
+      justify-content: space-around;
+    }
+  
+    .filter-form {
+      grid-template-columns: 1fr;
+    }
+  }
+  

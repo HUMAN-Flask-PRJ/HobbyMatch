@@ -1,0 +1,13 @@
+{# 첫 접속 타이틀 화면 #}
+
+{% extends "base.html" %}
+{% block title %}HobbyMatch · 하비매치{% endblock %}
+{% block content %}
+<section class="title-screen">
+  <p class="eyebrow">HobbyMatch</p>
+  <h1>취미 탐색을 시작합니다</h1>
+  <p class="lede">내가 좋아하는 것에서 출발해, 아직 몰랐던 새로운 취미를 발견한다.</p>
+  {# [Jinja2] {{ url_for('diagnosis.diagnosis') }} : 취미 진단 탭 주소로 연결한다. #}
+  {#<a class="cta-button" href="{{ url_for('diagnosis.diagnosis') }}">취미 진단 시작하기</a>#}
+</section>
+{% endblock %}

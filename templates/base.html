@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  {# 레이아웃이 깨지지 않게 화면 너비를 기기 너비에 맞춘다. #}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {# [Jinja2] {% block %} : 자식 템플릿이 title 블록을 덮어쓰면 탭 제목이 바뀐다. #}
+  <title>{% block title %}HobbyMatch{% endblock %}</title>
+  {# [Jinja2] {{ url_for(...) }} : Flask 함수를 Jinja2에서 호출해 static/ 파일 주소를 만든다. #}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      {# [Jinja2] {{ url_for('main.index') }} : 로고를 누르면 타이틀 화면(/)으로 돌아간다. #}
+      <a class="logo" href="{{ url_for('main.index') }}">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">
+          <span class="logo-name">HobbyMatch <span class="logo-badge">하비매치</span></span>
+          <span class="logo-slogan">내가 좋아하는 것에서 출발해, 아직 몰랐던 새로운 취미를 발견한다.</span>
+        </span>
+      </a>
+      {# [Jinja2] {% if %} : active_tab 은 각 라우트가 넘긴다. 현재 페이지 메뉴에 is-active 클래스를 붙인다. #}
+      <nav class="site-nav" aria-label="주요 메뉴">
+        
+        <a class="nav-link{% if active_tab == 'diagnosis' %} is-active{% endif %}" href="#">취미 진단</a>
+        <a class="nav-link{% if active_tab == 'recommendation' %} is-active{% endif %}" href="#">추천 결과</a>
+        <a class="nav-link{% if active_tab == 'explore' %} is-active{% endif %}" href="#">취미 탐색</a>
+        
+      </nav>
+    </div>
+  </header>
+  <main class="site-main">
+    {# [Jinja2] {% block content %} : 자식 템플릿의 content 블록 내용이 여기 들어온다. #}
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
