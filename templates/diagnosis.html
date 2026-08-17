@@ -1,0 +1,205 @@
+{# base.html을 그대로 가져오기 때문에 <!DOCTYPE html> 다시 작성할 필요 없음 #}
+{% extends "base.html" %}
+
+{% block title %}
+    취미 진단 | HobbyMatch
+{% endblock %}
+
+{% block content %}
+    <h1>취미 진단</h1>
+
+    <form method="post" action="/recommendation" id="diagnosisForm">
+        
+        <!-- mbti 선택 : 1개 - radio 타입 -->
+        <section class="diagnosis-step" id="step1">
+            <h2>MBTI를 선택해주세요</h2>
+
+            {% for item in mbti_list %}
+                <label>
+                    <input
+                        type="radio"
+                        name="mbti"
+                        value="{{item.type}}"
+                        required
+                    >
+                    {{ item.type }} - {{ item.name }}
+                </label>
+            {% endfor %}
+
+            <button type="button" class="next-button">
+                다음
+            </button>
+        </section>
+
+
+        <!-- 취미 선택 : 여러 개 - checkbox 타입 -->
+        <section class="diagnosis-step" id="step2" hidden>
+            <h2>현재 즐기고 있는 취미를 선택해주세요</h2>
+
+            {% for item in hobbies %}
+                <label>
+                    <input
+                        type="checkbox"
+                        name="hobby"
+                        value="{{ item.id }}"   {# 서버에 보내는 값 id #}
+                    >
+                    {{ item.name }}             {# 화면에 표시하는 값 name #}
+                </label>
+            {% endfor %}
+            
+            <button type="button" class="prev-button">
+                이전
+            </button>
+            
+            <button type="button" class="next-button">
+                다음
+            </button>
+        </section>
+
+        <!-- 목적 및 선호 -->
+        <section class="diagnosis-step" id="step3" hidden>
+
+            <h2>STEP 3. 원하는 취미 성향을 선택해주세요</h2>
+
+
+            <h3>취미를 통해 무엇을 얻고 싶나요?</h3>
+
+            <label>
+                <input
+                type="checkbox"
+                name="purpose"
+                value="STRESS_RELIEF"
+                >
+                스트레스 해소
+            </label>
+
+            <label>
+                <input
+                type="checkbox"
+                name="purpose"
+                value="CREATION"
+                >
+                창의적 생산 / 결과물
+            </label>
+
+            <label>
+                <input
+                type="checkbox"
+                name="purpose"
+                value="FITNESS"
+                >
+                체력 & 건강 증진
+            </label>
+
+            <label>
+                <input
+                type="checkbox"
+                name="purpose"
+                value="NETWORKING"
+                >
+                새로운 소통 / 동호회
+            </label>
+
+            <label>
+                <input
+                type="checkbox"
+                name="purpose"
+                value="MINDFULNESS"
+                >
+                마음 챙김 & 고요함
+            </label>
+
+            <label>
+                <input
+                type="checkbox"
+                name="purpose"
+                value="KNOWLEDGE"
+                >
+                지적 탐구 & 자기계발
+            </label>
+
+
+            <h3>동행</h3>
+
+            <select name="socialType" required>
+                <option value="">선택해주세요</option>
+                <option value="SOLO">혼자</option>
+                <option value="GROUP">함께</option>
+                <option value="BOTH">상관없음</option>
+            </select>
+
+
+            <h3>장소</h3>
+
+            <select name="indoorOutdoor" required>
+                <option value="">선택해주세요</option>
+                <option value="INDOOR">실내</option>
+                <option value="OUTDOOR">야외</option>
+                <option value="BOTH">상관없음</option>
+            </select>
+
+
+            <h3>활동량</h3>
+
+            <select name="activityLevel" required>
+                <option value="">선택해주세요</option>
+                <option value="LOW">잔잔함 / 앉아서 하는 활동</option>
+                <option value="MEDIUM">적당함 / 산책 수준</option>
+                <option value="HIGH">액티브 / 땀나는 운동</option>
+            </select>
+
+
+            <button type="button" class="prev-button">
+                이전
+            </button>
+
+            <button type="button" class="next-button">
+                다음
+            </button>
+
+        </section>    
+
+        <!-- 시간 및 예산 -->
+        <section class="diagnosis-step" id="step4" hidden>
+
+            <h2>STEP 4. 현실적인 조건을 선택해주세요</h2>
+
+
+            <h3>예산</h3>
+
+            <select name="budgetTier" required>
+                <option value="">선택해주세요</option>
+                <option value="FREE">무료 / 부담 제로</option>
+                <option value="LOW">소액 (월 5만원 미만)</option>
+                <option value="MEDIUM">보통 (월 5~15만원)</option>
+                <option value="HIGH">제한 없음 / 본격적</option>
+            </select>
+
+
+            <h3>시간</h3>
+
+            <select name="timeRequired" required>
+                <option value="">선택해주세요</option>
+                <option value="30MIN">하루 30분 이내</option>
+                <option value="1HOUR">주말 1~2시간 정도</option>
+                <option value="HALF_DAY">반나절 (3~4시간)</option>
+                <option value="FULL_DAY">주말 하루 종일</option>
+            </select>
+
+
+            <button type="button" class="prev-button">
+                이전
+            </button>
+
+            <button type="submit">
+                추천 결과 보기
+            </button>
+
+        </section>
+    </form>
+
+    <script
+        src="{{ url_for('static', filename='js/diagnosis.js') }}"
+        defer >
+    </script>
+{% endblock %}

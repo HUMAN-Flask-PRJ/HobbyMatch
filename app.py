@@ -8,9 +8,11 @@ def create_app():
 
     #routes bp 만들기
     from backend.routes.main import bp as main_bp
+    from backend.routes.diagnosis import bp as diagnosis_bp
 
     #만든 bp 등록
     app.register_blueprint(main_bp)
+    app.register_blueprint(diagnosis_bp)
     
     from backend.models import hobby, mbti
     
