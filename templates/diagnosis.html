@@ -1,6 +1,13 @@
 {# base.html을 그대로 가져오기 때문에 <!DOCTYPE html> 다시 작성할 필요 없음 #}
 {% extends "base.html" %}
 
+{% block extra_css %}
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='css/diagnosis.css') }}"
+  >
+{% endblock %}
+
 {% block title %}
     취미 진단 | HobbyMatch
 {% endblock %}

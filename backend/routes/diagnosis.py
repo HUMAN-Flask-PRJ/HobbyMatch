@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template
 from backend.models import mbti, hobby
 
 # diagnosis라는 이름의 라우트 묶음
