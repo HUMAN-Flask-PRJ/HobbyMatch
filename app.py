@@ -1,16 +1,17 @@
 from flask import Flask
 from config import Config
 
-
 def create_app():
     #현재 파일이 있는 폴더 기준으로 templates/ 와 static/ 을 자동으로 찾는다.
     app = Flask(__name__)
 
     #routes bp 만들기
     from backend.routes.main import bp as main_bp
+    from backend.routes.recommendation import bp as recommend_bp
 
     #만든 bp 등록
     app.register_blueprint(main_bp)
+    app.register_blueprint(recommend_bp)
     
     from backend.models import hobby, mbti
     
