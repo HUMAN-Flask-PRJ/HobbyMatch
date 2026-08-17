@@ -1,0 +1,835 @@
+/* ==================================================
+   취미 진단 페이지
+   공통 색상은 style.css의 :root 변수 사용
+================================================== */
+
+/* =========================
+   1. 전체 레이아웃
+========================= */
+
+.diagnosis-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    color: var(--text);
+}
+
+.diagnosis-title {
+    margin: 0 0 28px;
+    color: var(--text);
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+
+/* =========================
+   2. 진행 상태
+========================= */
+
+.diagnosis-progress {
+    margin-bottom: 28px;
+    padding: 22px 24px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.progress-header strong {
+    color: var(--text);
+    font-size: 16px;
+}
+
+#stepIndicator {
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--border);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 25%;
+    height: 100%;
+    background-color: var(--accent);
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+/* 단계 탭 전체 */
+.step-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 14px;
+}
+
+/* button이지만 버튼처럼 보이지 않게 */
+.step-tab {
+    width: 100%;
+    padding: 10px 12px;
+    appearance: none;
+    background-color: rgba(30, 41, 59, 0.65);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--muted);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* 마우스 올렸을 때 */
+.step-tab:not(.locked):hover {
+    background-color: rgba(129, 140, 248, 0.10);
+    color: var(--text);
+}
+
+/* 현재 보고 있는 단계 */
+.step-tab.active {
+    background-color: rgba(79, 70, 229, 0.30);
+    border-color: var(--accent);
+    color: var(--text);
+    font-weight: 700;
+}
+
+/* 이미 지나온 단계 */
+.step-tab.completed {
+    background-color: rgba(30, 41, 59, 0.9);
+    color: var(--text);
+}
+
+/* 완료한 단계 앞에 체크 표시 */
+.step-tab.completed:not(.active)::before {
+    content: "✓";
+    margin-right: 6px;
+    color: var(--accent);
+    font-weight: 800;
+}
+
+/* 아직 갈 수 없는 단계 */
+.step-tab.locked {
+    background-color: rgba(30, 41, 59, 0.35);
+    color: var(--muted);
+    opacity: 0.45;
+    cursor: default;
+}
+
+
+/* =========================
+   3. STEP 공통 패널
+========================= */
+
+.diagnosis-step {
+    padding: 36px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: none;
+}
+
+.diagnosis-step[hidden] {
+    display: none !important;
+}
+
+.diagnosis-step h2 {
+    margin: 0 0 8px;
+    color: var(--text);
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.diagnosis-step h3 {
+    margin: 32px 0 12px;
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.step-description {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   4. STEP 1 - MBTI
+========================= */
+
+/* MBTI 유형군 색상 */
+.mbti-nt {
+    --mbti-color: #a855f7;
+}
+.mbti-nf {
+    --mbti-color: #10b981;
+}
+.mbti-sj {
+    --mbti-color: #f97316;
+}
+.mbti-sp {
+    --mbti-color: #38bdf8;
+}
+
+.mbti-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.mbti-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    padding: 18px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.mbti-card input {
+    display: none;
+}
+
+.mbti-card:hover {
+    background-color: #182338;
+    border-color: var(--mbti-color);
+    transform: translateY(-1px);
+}
+
+.mbti-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.mbti-type {
+    flex-shrink: 0;
+    color: var(--mbti-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.mbti-name {
+    padding: 4px 7px;
+    background-color: rgba(30, 41, 59, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.mbti-title {
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.mbti-summary {
+    margin: 0 0 16px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.mbti-keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.mbti-keyword {
+    padding: 3px 6px;
+    background-color: rgba(30, 41, 59, 0.8);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--muted);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.mbti-card:has(input:checked) {
+    background-color: rgba(129, 140, 248, 0.08);
+    border: 2px solid var(--mbti-color);
+}
+
+.mbti-card:has(input:checked) .mbti-type {
+    color: var(--mbti-color);
+}
+
+.mbti-card:has(input:checked) .mbti-name {
+    color: var(--text);
+}
+
+
+/* =========================
+   5. STEP 2 - 기존 취미
+========================= */
+
+.hobby-guide {
+    margin-bottom: 20px;
+}
+
+.hobby-guide .step-description {
+    margin: 0;
+}
+
+.hobby-category-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+    padding-bottom: 6px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+/* 가로 스크롤바 작게 보여줌 */
+.hobby-category-tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+.hobby-category-tabs::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 999px;
+}
+
+.hobby-category-tab {
+    flex-shrink: 0;
+    padding: 8px 13px;
+    background-color: var(--border);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--muted);
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.hobby-category-tab:hover {
+    color: var(--text);
+    border-color: var(--accent);
+}
+
+.hobby-category-tab.active {
+    background-color: var(--accent-strong);
+    border-color: var(--accent);
+    color: var(--text);
+    font-weight: 700;
+}
+
+.hobby-list {
+    padding: 4px;
+}
+
+.hobby-category-title {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.hobby-category-group + .hobby-category-group {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    padding: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.hobby-card input {
+    display: none;
+}
+
+.hobby-card:hover {
+    background-color: #182338;
+    border-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+.hobby-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.hobby-name {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.hobby-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: var(--accent-strong);
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    font-weight: 800;
+    opacity: 0;
+}
+
+.hobby-card:has(input:checked) .hobby-selected {
+    opacity: 1;
+}
+
+.hobby-summary {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.hobby-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.hobby-tag {
+    padding: 3px 6px;
+    background-color: rgba(30, 41, 59, 0.8);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--muted);
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.hobby-card:has(input:checked) {
+    background-color: rgba(129, 140, 248, 0.10);
+    border: 2px solid var(--accent);
+}
+
+.hobby-card:has(input:checked) .hobby-name {
+    color: var(--accent);
+}
+
+.hobby-card:has(input:checked) .hobby-tag {
+    border-color: rgba(129, 140, 248, 0.35);
+}
+
+.selected-hobbies {
+    margin-bottom: 28px;
+    padding: 16px;
+    background-color: rgba(15, 23, 42, 0.65);
+    border: 1px solid rgba(129, 140, 248, 0.45);
+    border-radius: var(--radius);
+}
+
+.selected-hobbies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.selected-hobbies-header strong {
+    color: var(--accent);
+    font-size: 13px;
+}
+
+.clear-hobbies-button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.clear-hobbies-button:hover {
+    color: var(--text);
+}
+
+.selected-hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.selected-hobby-chip {
+    padding: 6px 11px;
+    background-color: rgba(79, 70, 229, 0.25);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--text);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.selected-hobby-chip:hover {
+    background-color: rgba(79, 70, 229, 0.4);
+}
+
+.selected-hobby-empty {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+/* =========================
+   6. STEP 3 - 목적 및 선호
+========================= */
+
+/* STEP 3 / STEP 4 질문 영역 공통 */
+.preference-section,
+.condition-section {
+    padding: 28px 0;
+}
+
+
+/* 질문 영역 사이 구분 */
+.preference-section + .preference-section,
+.condition-section + .condition-section {
+    margin-top: 24px;
+    padding-top: 36px;
+    border-top: 1px solid var(--border);
+}
+
+
+/* 질문 제목 영역 */
+.preference-heading {
+    margin-bottom: 22px;
+}
+
+.preference-heading h3 {
+    margin: 8px 0 5px;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.preference-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+
+/* Q1, Q2 등의 라벨 */
+.preference-step-label {
+    display: inline-block;
+    padding: 5px 9px;
+    background-color: var(--section-bg);
+    border: 1px solid var(--section-color);
+    border-radius: 6px;
+    color: var(--section-color);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* STEP 3 질문별 색상 */
+.purpose-section {
+    --section-color: #818cf8;
+    --section-bg: rgba(129, 140, 248, 0.12);
+}
+
+.social-section {
+    --section-color: #d946ef;
+    --section-bg: rgba(217, 70, 239, 0.12);
+}
+
+.location-section {
+    --section-color: #10b981;
+    --section-bg: rgba(16, 185, 129, 0.12);
+}
+
+.activity-section {
+    --section-color: #f97316;
+    --section-bg: rgba(249, 115, 22, 0.12);
+}
+
+
+/* 목적 */
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+
+/* 동행 / 장소 / 활동량 */
+.option-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+
+/* =========================
+   7. STEP 4 - 예산 및 시간
+========================= */
+
+/* 예산 */
+.budget-section {
+    --section-color: #38bdf8;
+    --section-bg: rgba(56, 189, 248, 0.12);
+}
+
+
+/* 시간 */
+.time-section {
+    --section-color: #a78bfa;
+    --section-bg: rgba(167, 139, 250, 0.12);
+}
+
+.condition-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+
+/* =========================
+   8. STEP 3 / STEP 4 공통 선택 카드
+========================= */
+
+.option-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 82px;
+    padding: 18px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    cursor: pointer;
+    text-align: left;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.option-card input {
+    display: none;
+}
+
+
+/* STEP 4 카드는 조금 더 높게 */
+.condition-section .option-card {
+    min-height: 92px;
+}
+
+
+/* hover */
+.option-card:hover {
+    background-color: #182338;
+    border-color: var(--section-color);
+    transform: translateY(-1px);
+}
+
+
+/* 아이콘 */
+.option-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    background-color: rgba(30, 41, 59, 0.9);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+/* 카드 문구 */
+.option-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.option-content strong {
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.option-content small {
+    color: var(--muted);
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* 선택 상태 */
+.option-card:has(input:checked) {
+    background-color: var(--section-bg);
+    border: 2px solid var(--section-color);
+}
+
+.option-card:has(input:checked) .option-icon {
+    background-color: var(--section-bg);
+    border-color: var(--section-color);
+}
+
+.option-card:has(input:checked) .option-content strong {
+    color: var(--section-color);
+}
+
+
+/* =========================
+   9. 이전 / 다음 버튼
+========================= */
+
+.step-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.next-button,
+.prev-button,
+.submit-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.next-button,
+.submit-button {
+    background-color: var(--accent-strong);
+    color: var(--text);
+}
+
+.next-button:hover,
+.submit-button:hover {
+    background-color: var(--accent);
+}
+
+.prev-button {
+    background-color: var(--border);
+    color: var(--muted);
+}
+
+.prev-button:hover {
+    color: var(--text);
+}
+
+
+/* =========================
+   10. 반응형
+========================= */
+
+@media (max-width: 900px) {
+
+    .mbti-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .purpose-grid,
+    .option-grid,
+    .condition-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .diagnosis-container {
+        padding: 36px 16px 60px;
+    }
+
+    .diagnosis-step {
+        padding: 24px 18px;
+    }
+
+    .mbti-grid,
+    .hobby-grid,
+    .purpose-grid,
+    .option-grid,
+    .condition-grid,
+    .step-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .diagnosis-title {
+        font-size: 28px;
+    }
+
+    .hobby-guide {
+        align-items: flex-start;
+    }
+}
