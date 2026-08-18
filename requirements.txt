@@ -1,2 +1,4 @@
-flask
-dotenv
+Flask
+python-dotenv
+gunicorn
+requests
