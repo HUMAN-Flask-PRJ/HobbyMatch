@@ -371,19 +371,26 @@ def evaluate_hobby(hobby, mbti_info, current_hobbies, user_input):
         total_score += 5.0
 
 
-
+    scores = {
+        "mbti_score": s1,
+        "relation_score": s2,
+        "preference_score": s3,
+        "condition_score": s4,
+        "purpose_score": s5,
+        "novelty_score": s6,
+    }
+    
     return {
 
         "hobby": hobby,
-
         "total_score": round(min(100.0, total_score), 1),
 
-        "relation_score": s2,
+        **scores,
 
-        "novelty_score": s6,
-
-        "mbti_score": s1,
-
+        "reasons": _build_reasons(
+            scores,
+            has_history=bool(current_hobbies)
+            )
     }
 
 
@@ -487,3 +494,44 @@ def make_recommendations(hobbies, mbti_info, user_input):
 
 
     return recommendations 
+
+
+# 추천 이유 TOP3 출력을 위한 함수
+def _build_reasons(scores, has_history):
+
+    reason_candidates = [
+        {
+            "score": scores["mbti_score"] * _WEIGHTS["MBTI"],
+            "text": "MBTI 성향과 잘 맞는 취미예요."
+        },
+        {
+            "score": scores["preference_score"] * _WEIGHTS["PREF"],
+            "text": "선호하는 활동 방식과 잘 맞아요."
+        },
+        {
+            "score": scores["condition_score"] * _WEIGHTS["COND"],
+            "text": "예산과 시간 조건에 잘 맞아요."
+        },
+        {
+            "score": scores["purpose_score"] * _WEIGHTS["PURPOSE"],
+            "text": "원하는 취미 목적과 잘 맞아요."
+        },
+        {
+            "score": scores["novelty_score"] * _WEIGHTS["NOVELTY"],
+            "text": "새롭게 도전해보기 좋은 취미예요."
+        }
+    ]
+
+    # 기존 취미를 선택한 경우에만 연관성 이유 추가
+    if has_history:
+        reason_candidates.append({
+            "score": scores["relation_score"] * _WEIGHTS["RELATION"],
+            "text": "기존 취미와 연관성이 높아요."
+        })
+
+    reason_candidates.sort(
+        key=lambda reason: reason["score"],
+        reverse=True
+    )
+
+    return reason_candidates[:3]
