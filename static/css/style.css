@@ -291,9 +291,17 @@
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hobby-card p {
+    flex: 1;
+    margin-bottom: 1rem;
   }
   
-  .hobby-card h2 {
+  .hobby-card h2,
+  .hobby-card h3 {
     margin: 0.35rem 0 0.5rem;
     font-size: 1.1rem;
   }

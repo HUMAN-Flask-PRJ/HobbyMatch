@@ -9,11 +9,13 @@ def create_app():
     from backend.routes.main import bp as main_bp
     from backend.routes.recommendation import bp as recommend_bp
     from backend.routes.diagnosis import bp as diagnosis_bp
+    from backend.routes.explore import explore_bp 
 
     #만든 bp 등록
     app.register_blueprint(main_bp)
     app.register_blueprint(recommend_bp)
     app.register_blueprint(diagnosis_bp)
+    app.register_blueprint(explore_bp)
     
     from backend.models import hobby, mbti
     
