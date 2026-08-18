@@ -8,17 +8,15 @@ bp = Blueprint("diagnosis", __name__)
 # URL 연결
 @bp.route("/diagnosis")
 def diagnosis():
-    mbti_type = session.get("mbti")
-    selected_hobbies = session.get("hobbies",[])
-    purposes = session.get("purposes",[])
+    # mbti_type = session.get("mbti")
+    # selected_hobbies = session.get("hobbies",[])
+    # purposes = session.get("purposes",[])
     
     # JSON 파일을 직접 열지 않고 model을 통해 호출
     # controller가 repository를 직접 호출하지 않고 service를 통해 호출하는 것과 비슷
     # 현재는 app.py에서 실행한 것이 있기 때문에 메모리에 있는 데이터 반환
-    mbti_list=mbti.load_all()
+    mbti_list = mbti.load_all()
     hobbies = hobby.load_all()
-    
-
 
     return render_template(
         "diagnosis.html",

@@ -33,13 +33,26 @@
                 추천 점수 : {{ pick.total_score }}점
             </p>
 
+            <div class="recommend-reasons">
+
+                <h3>이런 점이 잘 맞아요</h3>
+
+                <div class="reason-list">
+                    {% for reason in pick.reasons %}
+                        <p class="recommend-reason">
+                            <span class="reason-check">✓</span>
+                            {{ reason.text }}
+                        </p>
+                    {% endfor %}
+                </div>
+            </div>
+
             <button
                 class="guide-button"
                 type="button"
                 onclick="openGuideModal('guide-modal-{{ loop.index }}')">
                 시작 가이드 보기
             </button>
-
         </div>
 
 

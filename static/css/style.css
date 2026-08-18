@@ -339,7 +339,6 @@
   /* ---------- 추천 결과 시작 가이드 버튼 ---------- */
 .guide-button {
   width: 100%;
-  margin-top: auto;
   padding: 12px;
 
   background: transparent;
@@ -547,6 +546,50 @@
 .guide-button:hover {
     border-color: var(--accent);
     color: var(--accent);
+}
+
+/* 추천 결과 이유 TOP3 */
+.recommend-reasons {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+}
+
+.recommend-reasons h3 {
+    margin: 0 0 12px;
+
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reason-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.recommend-reason {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.reason-check {
+    flex-shrink: 0;
+
+    color: var(--accent);
+    font-weight: 800;
 }
 
 

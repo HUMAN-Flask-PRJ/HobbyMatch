@@ -372,6 +372,15 @@
     border-top: 1px solid var(--border);
 }
 
+
+/* 카테고리 필터 시 첫 표시 항목의 구분선 제거 */
+.hobby-category-group[hidden]
++ .hobby-category-group:not([hidden]) {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
 .hobby-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
