@@ -1,62 +1,129 @@
-{#
-  추천 결과 화면.
-  [Jinja2] 이 파일은 Jinja2 템플릿이다. Flask의 render_template()이 렌더링한다.
-
-  의도:
-    서비스가 고른 취미 최대 3장을 카드로 보여 준다.
-    배지: 잘 맞음(1등) / 비슷함(2등) / 새로운 도전(새로움 점수).
-    입문 가이드는 <details>로 접어 두어 화면을 짧게 유지한다.
-
-  서버에서 받은 값:
-    mbti  — 제출한 유형 (제목에 사용)
-    picks — [{hobby, total, badge}, ...]
-#}
-{# [Jinja2] {% extends %} / {% block %} : base.html 을 상속하고 제목·본문만 채운다. #}
 {% extends "base.html" %}
-{% block title %}추천 결과 · HobbyMatch{% endblock %}
+
+{% block title %}추천 결과 | HobbyMatch{% endblock %}
+
 {% block content %}
-<section class="placeholder-page">
-  {# [Jinja2] {% if %} / {{ }} : mbti가 있으면 제목에 유형을 넣는다. #}
-  <h1>{% if mbti %}{{ mbti }}님을 위한 다음 취미{% else %}추천 결과{% endif %}</h1>
-  {% if picks %}
-  <div class="card-grid">
-    {# [Jinja2] {% for pick in picks %} : 추천 카드 목록을 반복한다. #}
-    {% for pick in picks %}
-    <article class="hobby-card">
-      <p class="badge">{{ pick.badge }}</p>
-      <h2>{{ pick.hobby.name }}</h2>
-      <p class="muted">{{ pick.hobby.category }} · {{ pick.total }}점</p>
-      <p>{{ pick.hobby.summary }}</p>
-      {# [Jinja2] {% if %} : starterGuide가 없는 취미도 있을 수 있어서 감싼다. #}
-      {% if pick.hobby.starterGuide %}
-      <details>
-        <summary>시작 가이드</summary>
-        <p>월비용: {{ pick.hobby.starterGuide.estimatedMonthlyCost }}</p>
-        <p>준비물</p>
-        <ul>
-          {# [Jinja2] {% for %} : 준비물 리스트를 반복한다. #}
-          {% for item in pick.hobby.starterGuide.preparationChecklist %}
-          <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-        <p>단계</p>
-        <ol>
-          {# [Jinja2] {% for %} : 시작 단계 리스트를 반복한다. #}
-          {% for step in pick.hobby.starterGuide.steps %}
-          <li>{{ step.title }} — {{ step.description }}</li>
-          {% endfor %}
-        </ol>
-        <p>흔한 실수: {{ pick.hobby.starterGuide.commonMistakes }}</p>
-      </details>
-      {% endif %}
-    </article>
-    {% endfor %}
-  </div>
-  {% else %}
-  {# GET으로 들어오면 라우트가 진단으로 리다이렉트하므로, 이 문구는 예비 안내. #}
-  <p>진단에서 제출하면 잘 맞음 / 비슷함 / 새로운 도전 카드 3장이 이 화면에 표시됩니다.</p>
-  {% endif %}
-  {# [Jinja2] {{ url_for(...) }} : Flask 라우트 이름으로 링크 주소를 만든다. #}
-  <p><a class="nav-link is-active" href="#">다시 진단하기</a></p>
-</section>
+
+<div class="recommendation-container">
+
+    <h1>당신에게 추천하는 취미</h1>
+
+    <p class="recommendation-description">
+        입력한 정보를 바탕으로 잘 맞는 취미를 추천해드려요.
+    </p>
+
+    <div class="recommendation-list">
+
+        {% for pick in picks %}
+
+        <!-- 추천 카드 -->
+        <div class="recommend-card">
+
+            <span class="recommend-badge">
+                {{ pick.badge }}
+            </span>
+
+            <h2>{{ pick.hobby.name }}</h2>
+
+            <p class="hobby-description">
+                {{ pick.hobby.description }}
+            </p>
+
+            <p class="score">
+                추천 점수 : {{ pick.total_score }}점
+            </p>
+
+            <button
+                class="guide-button"
+                type="button"
+                onclick="openGuideModal('guide-modal-{{ loop.index }}')">
+                시작 가이드 보기
+            </button>
+
+        </div>
+
+
+        <!-- 시작 가이드 팝업 -->
+        <div
+            class="guide-modal"
+            id="guide-modal-{{ loop.index }}">
+
+            <div class="guide-modal-content">
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    onclick="closeGuideModal('guide-modal-{{ loop.index }}')">
+                    ×
+                </button>
+
+                <h2>{{ pick.hobby.name }} 시작 가이드</h2>
+
+
+                <!-- 준비물 -->
+                <h3>준비물</h3>
+
+                <ul>
+                    {% for item in pick.hobby.starterGuide.preparationChecklist %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+
+
+                <!-- 시작 방법 -->
+                <h3>시작 방법</h3>
+
+                {% for step in pick.hobby.starterGuide.steps %}
+
+                <div class="guide-step">
+
+                    <h4>
+                        STEP {{ step.stepNumber }}. {{ step.title }}
+                    </h4>
+
+                    <p>
+                        {{ step.description }}
+                    </p>
+
+                </div>
+
+                {% endfor %}
+
+
+                <!-- 주의사항 -->
+                <h3>주의사항</h3>
+
+                <p>
+                    {{ pick.hobby.starterGuide.commonMistakes }}
+                </p>
+
+
+                <!-- 예상 월 비용 -->
+                <h3>예상 월 비용</h3>
+
+                <p>
+                    {{ pick.hobby.starterGuide.estimatedMonthlyCost }}
+                </p>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+
+<script>
+    function openGuideModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeGuideModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+
 {% endblock %}
