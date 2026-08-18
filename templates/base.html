@@ -26,8 +26,9 @@
         
         <a class="nav-link{% if active_tab == 'diagnosis' %} is-active{% endif %}" 
            href="{{ url_for('diagnosis.diagnosis') }}">취미 진단</a>
-        <a class="nav-link{% if active_tab == 'recommendation' %} is-active{% endif %}" href="#">추천 결과</a>
-        <a class="nav-link{% if active_tab == 'explore' %} is-active{% endif %}" href="{{ url_for('explore.explore') }}">취미 탐색</a>
+        <a class="nav-link{% if active_tab == 'recommendation' %} is-active{% endif %}" 
+        href="{{url_for('recommendation.recommendation')}}">추천 결과</a>
+        <a class="nav-link{% if active_tab == 'explo`re' %} is-active{% endif %}" href="#">취미 탐색</a>
         
       </nav>
     </div>

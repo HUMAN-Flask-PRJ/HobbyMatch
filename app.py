@@ -22,10 +22,13 @@ def create_app():
     #Json 파일 처음에 로드해 메모리에 올려두기
     hobby.load_all()
     mbti.load_all()
+    # 세션 암호화에 필요한 키 설정
+    app.secret_key = "hobbymatch_secret_key"
     
     return app
 
 app = create_app()
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=app.config.get('DEBUG'))
+
