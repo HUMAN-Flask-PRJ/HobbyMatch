@@ -19,7 +19,7 @@ def recommendation():
 
     budget_tier = request.form.get("budgetTier")
     time_required = request.form.get("timeRequired")
-
+    
 
     # 전체 취미 데이터
     hobbies = hobby.load_all()
@@ -57,6 +57,6 @@ def recommendation():
 
 
     # 실제 추천 알고리즘 실행
-    picks = make_recommendations(hobbies,mbti_info,  user_input)
+    picks = make_recommendations(hobbies, mbti_info, user_input)
 
     return render_template( "recommendation.html", active_tab="recommendation",picks=picks)
