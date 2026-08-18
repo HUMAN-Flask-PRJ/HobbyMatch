@@ -75,7 +75,8 @@
                                 type="radio"
                                 name="mbti"
                                 value="{{ item.type }}"
-                                required
+                                {% if selected_mbti == item.type %}checked{% endif %}
+
                             >
 
                             <div class="mbti-card-header">
@@ -187,6 +188,7 @@
                                             type="checkbox"
                                             name="hobby"
                                             value="{{ item.id }}"
+                                            {% if item.id in selected_hobbies %}checked{% endif %}
                                         >
 
                                         <div class="hobby-card-header">
@@ -255,6 +257,8 @@
                                 type="checkbox"
                                 name="purpose"
                                 value="STRESS_RELIEF"
+                                {% if "STRESS_RELIEF" in selected_purposes %}checked{% endif %}
+
                             >
 
                             <span class="option-icon">🌿</span>
@@ -271,6 +275,7 @@
                                 type="checkbox"
                                 name="purpose"
                                 value="CREATION"
+                                {% if "CREATION" in selected_purposes %}checked{% endif %}
                             >
 
                             <span class="option-icon">🎨</span>
@@ -287,6 +292,7 @@
                                 type="checkbox"
                                 name="purpose"
                                 value="FITNESS"
+                                {% if "FITNESS" in selected_purposes %}checked{% endif %}
                             >
 
                             <span class="option-icon">💪</span>
@@ -303,6 +309,7 @@
                                 type="checkbox"
                                 name="purpose"
                                 value="NETWORKING"
+                                {% if "NETWORKING" in selected_purposes %}checked{% endif %}
                             >
 
                             <span class="option-icon">🤝</span>
@@ -319,6 +326,7 @@
                                 type="checkbox"
                                 name="purpose"
                                 value="MINDFULNESS"
+                                {% if "MIMDFULNESS" in selected_purposes %}checked{% endif %}
                             >
 
                             <span class="option-icon">🧘</span>
@@ -335,6 +343,7 @@
                                 type="checkbox"
                                 name="purpose"
                                 value="KNOWLEDGE"
+                                {% if "KNOWLEDGE" in selected_purposes %}checked{% endif %}
                             >
 
                             <span class="option-icon">📚</span>
@@ -363,6 +372,7 @@
                                 type="radio"
                                 name="socialType"
                                 value="SOLO"
+                                {% if selected_social_type == "SOLO" %}checked{% endif %}
                             >
 
                             <span class="option-icon">👤</span>
@@ -379,6 +389,7 @@
                                 type="radio"
                                 name="socialType"
                                 value="GROUP"
+                                {% if selected_social_type == "GROUP" %}checked{% endif %}
                             >
 
                             <span class="option-icon">👥</span>
@@ -395,6 +406,7 @@
                                 type="radio"
                                 name="socialType"
                                 value="BOTH"
+                                {% if selected_social_type == "BOTH" %}checked{% endif %}
                             >
 
                             <span class="option-icon">⚖️</span>
@@ -423,6 +435,7 @@
                                 type="radio"
                                 name="indoorOutdoor"
                                 value="INDOOR"
+                                {% if selected_indoor_outdoor == "INDOOR" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🏠</span>
@@ -439,6 +452,7 @@
                                 type="radio"
                                 name="indoorOutdoor"
                                 value="OUTDOOR"
+                                {% if selected_indoor_outdoor == "OUTDOOR" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🌳</span>
@@ -455,6 +469,7 @@
                                 type="radio"
                                 name="indoorOutdoor"
                                 value="BOTH"
+                                {% if selected_indoor_outdoor == "BOTH" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🧭</span>
@@ -483,6 +498,7 @@
                                 type="radio"
                                 name="activityLevel"
                                 value="LOW"
+                                {% if selected_activity_level == "LOW" %}checked{% endif %}
                             >
 
                             <span class="option-icon">☕</span>
@@ -499,6 +515,7 @@
                                 type="radio"
                                 name="activityLevel"
                                 value="MEDIUM"
+                                {% if selected_activity_level == "MEDIUM" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🚶</span>
@@ -515,6 +532,7 @@
                                 type="radio"
                                 name="activityLevel"
                                 value="HIGH"
+                                {% if selected_activity_level == "HIGH" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🔥</span>
@@ -576,7 +594,8 @@
                                 type="radio"
                                 name="budgetTier"
                                 value="FREE"
-                            >
+                                {% if selected_budget_tier == "FREE" %}checked{% endif %}
+                                >
 
                             <span class="option-icon">🪙</span>
 
@@ -592,6 +611,7 @@
                                 type="radio"
                                 name="budgetTier"
                                 value="LOW"
+                                {% if selected_budget_tier == "LOW" %}checked{% endif %}
                             >
 
                             <span class="option-icon">💵</span>
@@ -608,6 +628,7 @@
                                 type="radio"
                                 name="budgetTier"
                                 value="MEDIUM"
+                                {% if selected_budget_tier == "MEDIUM" %}checked{% endif %}
                             >
 
                             <span class="option-icon">💳</span>
@@ -624,6 +645,7 @@
                                 type="radio"
                                 name="budgetTier"
                                 value="HIGH"
+                                {% if selected_budget_tier == "HIGH" %}checked{% endif %}
                             >
 
                             <span class="option-icon">💎</span>
@@ -661,6 +683,7 @@
                                 type="radio"
                                 name="timeRequired"
                                 value="30MIN"
+                                {% if selected_time_required == "30MIN" %}checked{% endif %}
                             >
 
                             <span class="option-icon">⏱️</span>
@@ -677,6 +700,7 @@
                                 type="radio"
                                 name="timeRequired"
                                 value="1HOUR"
+                                {% if selected_time_required == "1HOUR" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🕐</span>
@@ -693,6 +717,7 @@
                                 type="radio"
                                 name="timeRequired"
                                 value="HALF_DAY"
+                                {% if selected_time_required == "HALF_DAY" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🌤️</span>
@@ -709,6 +734,7 @@
                                 type="radio"
                                 name="timeRequired"
                                 value="FULL_DAY"
+                                {% if selected_time_required == "FULL_DAY" %}checked{% endif %}
                             >
 
                             <span class="option-icon">🌅</span>

@@ -29,8 +29,26 @@ def recommendation():
         session["activityLevel"]=activity_level
         session["budgetTier"]=budget_tier
         session["timeRequired"]=time_required
+        
+    else:
 
+        # 기존 진단값 세션에서 복원
+        mbti_type = session.get("mbti")
+        selected_hobbies = session.get("hobby", [])
+        purposes = session.get("purpose", [])
 
+        social_type = session.get("socialType")
+        indoor_outdoor = session.get("indoorOutdoor")
+        activity_level = session.get("activityLevel")
+
+        budget_tier = session.get("budgetTier")
+        time_required = session.get("timeRequired")
+
+    # 진단 기록이 없는 경우
+    if not mbti_type:
+        picks = []
+
+    else:
         # 전체 취미 데이터
         hobbies = hobby.load_all()
 
@@ -67,9 +85,6 @@ def recommendation():
 
 
         # 실제 추천 알고리즘 실행
-        picks = make_recommendations(hobbies,mbti_info,  user_input)
-        session["picks"]=picks
-    else:
-        picks = session.get("picks",[])
+        picks = make_recommendations(hobbies, mbti_info, user_input)
 
     return render_template( "recommendation.html", active_tab="recommendation",picks=picks)
