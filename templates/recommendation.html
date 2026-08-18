@@ -126,7 +126,12 @@
 
     </div>
     <div class ="restart-container">
-    <button type="button" class="restart-button" onclick="location.href='/diagnosis'">
+    <button type="button" class="restart-button" 
+            onclick="
+                sessionStorage.removeItem('diagnosisCurrentStep');
+                sessionStorage.removeItem('diagnosisMaxReachedStep');
+                location.href='/diagnosis/reset'
+            ">
         다시 진단하기 
     </button>
     

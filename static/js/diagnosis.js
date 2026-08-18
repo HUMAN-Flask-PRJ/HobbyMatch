@@ -16,10 +16,14 @@ const hobbyCategoryGroups =document.querySelectorAll(".hobby-category-group");
 
 
 // 현재 단계
-let currentStep = 0;
-// 정상적으로 도달한 가장 먼 단계 -> 상단바에서 이전 단계 이동 가능에 필요
-let maxReachedStep = 0; 
+let currentStep = Number(
+    sessionStorage.getItem("diagnosisCurrentStep")
+) || 0;
 
+// 정상적으로 도달한 가장 먼 단계 -> 상단바에서 이전 단계 이동 가능에 필요
+let maxReachedStep = Number(
+    sessionStorage.getItem("diagnosisMaxReachedStep")
+) || 0;
 
 function showStep(index){
     steps.forEach((step, stepIndex) => {
@@ -50,6 +54,17 @@ function showStep(index){
             tabIndex > maxReachedStep
         );
     });
+
+    // 현재 진단 진행 단계 저장
+    sessionStorage.setItem(
+        "diagnosisCurrentStep",
+        currentStep
+    );
+
+    sessionStorage.setItem(
+        "diagnosisMaxReachedStep",
+        maxReachedStep
+    );
 }
 
 
