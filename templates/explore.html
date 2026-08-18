@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}HobbyMatch · 취미 탐색{% endblock %}
+{% block content %}
+<div class="container">
+    <h2>취미 탐색 목록</h2>
+    <div class="card-grid">
+        <!-- 파이썬에서 넘겨준 hobbies 리스트를 반복문으로 돌린다. -->
+        {% for hobby in hobbies %}
+        <div class="hobby-card">
+            <h3>{{ hobby.name }}</h3>
+            <p>{{ hobby.description }}</p>
+            
+            {% if hobby.starterGuide %}
+            <button
+                class="guide-button"
+                type="button"
+                onclick="openGuideModal('guide-modal-{{ loop.index }}')">
+                시작 가이드 보기
+            </button>
+            {% endif %}
+        </div>
+
+        <!-- 시작 가이드 팝업 모달 -->
+        {% if hobby.starterGuide %}
+        <div
+            class="guide-modal"
+            id="guide-modal-{{ loop.index }}">
+
+            <div class="guide-modal-content">
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    onclick="closeGuideModal('guide-modal-{{ loop.index }}')">
+                    ×
+                </button>
+
+                <h2>{{ hobby.name }} 시작 가이드</h2>
+
+                <!-- 준비물 -->
+                {% if hobby.starterGuide.preparationChecklist %}
+                <h3>준비물</h3>
+                <ul>
+                    {% for item in hobby.starterGuide.preparationChecklist %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                <!-- 시작 방법 -->
+                {% if hobby.starterGuide.steps %}
+                <h3>시작 방법</h3>
+                {% for step in hobby.starterGuide.steps %}
+                <div class="guide-step">
+                    <h4>
+                        STEP {{ step.stepNumber }}. {{ step.title }}
+                    </h4>
+                    <p>
+                        {{ step.description }}
+                    </p>
+                </div>
+                {% endfor %}
+                {% endif %}
+
+                <!-- 주의사항 -->
+                {% if hobby.starterGuide.commonMistakes %}
+                <h3>주의사항</h3>
+                <p>
+                    {{ hobby.starterGuide.commonMistakes }}
+                </p>
+                {% endif %}
+
+                <!-- 예상 월 비용 -->
+                {% if hobby.starterGuide.estimatedMonthlyCost %}
+                <h3>예상 월 비용</h3>
+                <p>
+                    {{ hobby.starterGuide.estimatedMonthlyCost }}
+                </p>
+                {% endif %}
+
+            </div>
+
+        </div>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    function openGuideModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeGuideModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+{% endblock %}

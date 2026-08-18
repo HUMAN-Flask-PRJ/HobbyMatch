@@ -13,6 +13,8 @@ def diagnosis():
     # 현재는 app.py에서 실행한 것이 있기 때문에 메모리에 있는 데이터 반환
     mbti_list=mbti.load_all()
     hobbies = hobby.load_all()
+    
+
 
     return render_template(
         "diagnosis.html",
