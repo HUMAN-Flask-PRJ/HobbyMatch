@@ -52,39 +52,8 @@ function showStep(index){
     });
 }
 
-nextButtons.forEach((button)=>{
-    button.addEventListener("click", ()=>{
-        if(!validateStep(currentStep)){
-            return;
-        }
-        
-        currentStep++;
-        maxReachedStep = Math.max(maxReachedStep, currentStep);
-        showStep(currentStep);
-    });
-});
 
-prevButtons.forEach((button)=>{
-    button.addEventListener("click", ()=>{
-        currentStep --;
-        showStep(currentStep);
-    });
-});
-
-stepTabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-
-        const targetStep = Number(tab.dataset.step);
-
-        if (targetStep > maxReachedStep) {
-            return;
-        }
-
-        currentStep = targetStep;
-        showStep(currentStep);
-    });
-});
-
+// step 설정
 function validateStep(index){
     // step1 : mbti
     if(index === 0){
@@ -145,6 +114,18 @@ function validateStep(index){
     }
 
     return true;
+}
+
+function scrollToDiagnosisTop(){
+    const diagnosisContainer = document.querySelector(".diagnosis-container");
+    const top = 
+        diagnosisContainer.getBoundingClientRect().top
+        + window.scrollY - 80;
+
+    window.scrollTo({
+        top: top,
+        behavior: "smooth"
+    });
 }
 
 
@@ -210,6 +191,46 @@ function updateSelectedHobbies() {
         selectedHobbyList.appendChild(chip);
     });
 }
+
+
+// 이전/다음 버튼 동작
+nextButtons.forEach((button)=>{
+    button.addEventListener("click", ()=>{
+        if(!validateStep(currentStep)){
+            return;
+        }
+        
+        currentStep++;
+        maxReachedStep = Math.max(maxReachedStep, currentStep);
+        showStep(currentStep);
+        scrollToDiagnosisTop();
+    });
+});
+
+prevButtons.forEach((button)=>{
+    button.addEventListener("click", ()=>{
+        currentStep --;
+        showStep(currentStep);
+        scrollToDiagnosisTop();
+    });
+});
+
+
+// 상단 step 탭 이동
+stepTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+
+        const targetStep = Number(tab.dataset.step);
+
+        if (targetStep > maxReachedStep) {
+            return;
+        }
+
+        currentStep = targetStep;
+        showStep(currentStep);
+        scrollToDiagnosisTop();
+    });
+});
 
 
 // 취미 선택 전체 해제
