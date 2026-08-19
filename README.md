@@ -4,6 +4,9 @@ MBTI·기존 취미·시간·예산을 종합해 나에게 맞는 취미를 추�
 
 **Python · Flask · Jinja2 · Vanilla JavaScript · JSON**
 
+**프로젝트 기간** 2026.08.12 ~ 2026.08.19  
+
+
 [HobbyMatch 바로가기](https://port-0-flaskexample-msx8671h6a4e62ab.sel3.cloudtype.app/)
 
 ---
@@ -142,16 +145,18 @@ HobbyMatch/
 ## 주요 화면
 
 ### 메인 화면
-<img src="메인화면_이미지_URL" width="900" alt="HobbyMatch 메인 화면">
+<img src="https://github.com/user-attachments/assets/59fd14a7-cab4-427e-91ea-111decb1dfdb" width="900" alt="HobbyMatch 메인 화면">
 
 ### 취미 진단 화면
-<img src="진단화면_이미지_URL" width="900" alt="HobbyMatch 취미 진단 화면">
+<img src="https://github.com/user-attachments/assets/03b8e160-43b1-461c-aad8-ad06feaac1ad" width="900" alt="HobbyMatch 취미 진단 화면">
 
 ### 추천 결과 화면
-<img src="추천결과_이미지_URL" width="900" alt="HobbyMatch 추천 결과 화면">
+<img src="https://github.com/user-attachments/assets/bf9a8f6b-c636-454b-8bd9-84df7a10e14a" width="900" alt="HobbyMatch 추천 결과 화면">
 
 ### 취미 탐색 및 Starter Guide 화면
-<img src="취미탐색_이미지_URL" width="900" alt="HobbyMatch 취미 탐색 및 Starter Guide 화면">
+<img src="https://github.com/user-attachments/assets/e0c147f1-8f8e-4686-9023-34ec02ad80ed" width="900" alt="HobbyMatch 취미 탐색 화면">
+
+<img src="https://github.com/user-attachments/assets/7c4488ce-87d5-440b-acd0-a002a0377958" width="900" alt="HobbyMatch Starter Guide 화면">
 
 ---
 
