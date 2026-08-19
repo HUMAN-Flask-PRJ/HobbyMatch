@@ -141,12 +141,17 @@ HobbyMatch/
 
 ## 주요 화면
 
-1. 메인 화면
-2. 취미 진단 화면
-3. 추천 결과 화면
-4. 취미 탐색 및 Starter Guide 화면
+### 메인 화면
+<img src="메인화면_이미지_URL" width="900" alt="HobbyMatch 메인 화면">
 
-> 스크린샷 추가 예정
+### 취미 진단 화면
+<img src="진단화면_이미지_URL" width="900" alt="HobbyMatch 취미 진단 화면">
+
+### 추천 결과 화면
+<img src="추천결과_이미지_URL" width="900" alt="HobbyMatch 추천 결과 화면">
+
+### 취미 탐색 및 Starter Guide 화면
+<img src="취미탐색_이미지_URL" width="900" alt="HobbyMatch 취미 탐색 및 Starter Guide 화면">
 
 ---
 
